@@ -1,5 +1,4 @@
 import React from 'react';
-import { ThemeToggle } from '../ThemeToggle/ThemeToggle';
 import styles from './Header.module.css';
 
 interface HeaderProps {
@@ -14,7 +13,6 @@ export function Header({ title, subtitle }: HeaderProps): JSX.Element {
         <h1 className={styles.title}>{title}</h1>
         <div className={styles.subtitle}>{subtitle}</div>
       </div>
-      <ThemeToggle />
     </header>
   );
 }

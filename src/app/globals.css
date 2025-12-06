@@ -10,6 +10,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Media Query fallback for automatic mode switching */
+/* This provides a fallback when JavaScript hasn't loaded yet */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode])[data-theme] {
+    /* Apply dark mode when system prefers dark and data-mode is not set */
+    /* The inline script will set data-mode, but this provides a CSS-only fallback */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-mode])[data-theme] {
+    /* Apply light mode when system prefers light and data-mode is not set */
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

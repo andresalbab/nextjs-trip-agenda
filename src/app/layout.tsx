@@ -40,6 +40,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }): JSX.Element {
+  const defaultTheme = tripData.metadata.theme as ThemeName;
+
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
@@ -47,13 +49,33 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  // Get stored theme preference or use default (theme is fixed to first one)
+                  var theme = localStorage.getItem('trip-agenda-theme') || '${defaultTheme}';
+                  
+                  // Always use system preference for mode
+                  var mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                  
+                  // Apply immediately to prevent FOUC
+                  document.documentElement.setAttribute('data-theme', theme);
+                  document.documentElement.setAttribute('data-mode', mode);
+                } catch (e) {
+                  // Fallback to defaults if there's an error
+                  document.documentElement.setAttribute('data-theme', '${defaultTheme}');
+                  document.documentElement.setAttribute('data-mode', 'light');
+                }
+              })();
+            `,
+          }}
+        />
       </head>
       <body>
         <SnowflakeBackground />
-        <ThemeProvider
-          defaultTheme={tripData.metadata.theme as ThemeName}
-          defaultMode="light"
-        >
+        <ThemeProvider defaultTheme={defaultTheme}>
           <HeaderWrapper />
           {children}
         </ThemeProvider>
