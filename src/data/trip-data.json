@@ -1,0 +1,847 @@
+{
+  "metadata": {
+    "title": "Agenda de Viaje",
+    "subtitle": "Navidad 2025",
+    "location": "España (Ávila, Granada, Sierra Nevada)",
+    "startDate": "2025-12-24",
+    "endDate": "2026-01-02",
+    "theme": "earthy"
+  },
+  "days": [
+    {
+      "id": "day-1",
+      "dayNumber": 1,
+      "date": "2025-12-24",
+      "location": "Ávila",
+      "description": "Feliz Navidad!",
+      "activities": [
+        {
+          "id": "activity-1-1",
+          "time": "13:00",
+          "title": "Check-in Airbnb",
+          "icon": "hotel",
+          "description": "Llegada a la finca",
+          "location": [
+            {
+              "label": "Calle Cañada Real, Ávila, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Calle+Cañada+Real,+Ávila,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Check-in%20Airbnb%20%C3%81vila%20Llegada%20a%20la%20finca%20?width=600&height=400&nologo=true",
+            "alt": "Check-in Airbnb en Ávila"
+          },
+          "links": [
+            {
+              "label": "Ver en mapa",
+              "url": "http://maps.google.com",
+              "icon": "map",
+              "type": "map"
+            },
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-1-2",
+          "time": "20:00",
+          "title": "Cena de Navidad",
+          "icon": "outdoor_grill",
+          "description": "Cena Navideña al estilo español",
+          "location": [
+            {
+              "label": "Ávila, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Ávila,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Cena%20de%20Navidad%20%C3%81vila?width=600&height=400&nologo=true",
+            "alt": "Cena de Navidad en Ávila"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "dayNumber": 2,
+      "date": "2025-12-25",
+      "location": "Ávila",
+      "description": "Asado navideño",
+      "activities": [
+        {
+          "id": "activity-2-1",
+          "time": "14:00",
+          "title": "Asadito post Navidad",
+          "icon": "outdoor_grill",
+          "description": "Día familiar de asadito",
+          "location": [
+            {
+              "label": "Ávila, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Ávila,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Asado%20Navidad%20Avila?width=600&height=400&nologo=true",
+            "alt": "Asado navideño en Ávila"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-3",
+      "dayNumber": 3,
+      "date": "2025-12-26",
+      "location": "Día libre",
+      "description": "Día libre",
+      "activities": [
+        {
+          "id": "activity-3-1",
+          "time": "Todo el día",
+          "title": "Día libre",
+          "icon": "self_improvement",
+          "description": "Descanso",
+          "location": "N/A",
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Relax%20Holiday?width=600&height=400&nologo=true",
+            "alt": "Día de descanso"
+          },
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "dayNumber": 4,
+      "date": "2025-12-27",
+      "location": "Granada",
+      "description": "El centro de Graná",
+      "activities": [
+        {
+          "id": "activity-4-1",
+          "time": "13:00",
+          "title": "Check-in Airbnb",
+          "icon": "hotel",
+          "description": "Llegada y descarga",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Granada%20City?width=600&height=400&nologo=true",
+            "alt": "Check-in en Granada"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-4-2",
+          "time": "16:30",
+          "title": "Free walking tour",
+          "icon": "directions_walk",
+          "description": "Encuentro en Bib-Rambla junto a la fuente de los gigantes. Recorrido por el centro histórico de Granada",
+          "location": [
+            {
+              "label": "Plaza Bib-Rambla, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Plaza+Bib-Rambla,+Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Walking%20Tour%20Granada?width=600&height=400&nologo=true",
+            "alt": "Walking tour en Granada"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-4-3",
+          "time": "19:30",
+          "title": "Cena Los Manueles",
+          "icon": "restaurant",
+          "description": "El restaurante Los Manueles es muy tradicional y tiene tapeo local. Auténtica comida granadina",
+          "location": [
+            {
+              "label": "Restaurante Los Manueles, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Los+Manueles+Granada"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Restaurante%20Los%20Manueles%20Granada?width=600&height=400&nologo=true",
+            "alt": "Cena Los Manueles"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-5",
+      "dayNumber": 5,
+      "date": "2025-12-28",
+      "location": "Granada",
+      "description": "Un poco de historia Nazarí",
+      "activities": [
+        {
+          "id": "activity-5-1",
+          "time": "11:00",
+          "title": "Visita a La Alhambra",
+          "icon": "mosque",
+          "description": "Visita de 2 horas de la Alhambra. Explora uno de los palacios más impresionantes del mundo islámico",
+          "location": [
+            {
+              "label": "C. Real de la Alhambra, s/n, Centro, 18009 Granada",
+              "link": "https://maps.app.goo.gl/J8Snb9BV9oa8vmk97"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Alhambra%20Granada?width=600&height=400&nologo=true",
+            "alt": "La Alhambra en Granada"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "https://www.alhambra-patronato.es",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-5-1b",
+          "time": "13:00",
+          "title": "Entrada a Palacios Nazaríes",
+          "icon": "castle",
+          "description": "Recorrido final de 1 hora por los impresionantes Palacios Nazaríes",
+          "location": [
+            {
+              "label": "Palacios Nazaríes, Alhambra, Granada",
+              "link": "https://maps.app.goo.gl/J8Snb9BV9oa8vmk97"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Palacios%20Nazar%C3%ADes%20Alhambra?width=600&height=400&nologo=true",
+            "alt": "Palacios Nazaríes"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-5-2",
+          "time": "15:30",
+          "title": "Bar hopping de tapas",
+          "icon": "tapas",
+          "description": "Almuerzo a lo español de comer tapas en varios bares, de pie y sin prisa. En Granada es un clásico y normalmente te ponen una tapa gratis con la bebida.",
+          "location": [
+            {
+              "label": "Albaicín, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Albaicín,+Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Tapas%20Granada?width=600&height=400&nologo=true",
+            "alt": "Tapas en Granada"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-5-3",
+          "time": "17:00",
+          "title": "Mirador de San Nicolás",
+          "icon": "tour",
+          "description": "Recorrer los barrios del Albaicín y disfrutar de las mejores vistas de la Alhambra desde el Mirador",
+          "location": [
+            {
+              "label": "Plaza Mirador de San Nicolás, 2, Albaicín, 18010 Granada",
+              "link": "https://maps.app.goo.gl/kPy5Tq7CC2NBE5d1A"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Mirador%20de%20San%20Nicol%C3%A1s%20Granada?width=600&height=400&nologo=true",
+            "alt": "Mirador de San Nicolás"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-5-4",
+          "time": "20:00",
+          "title": "Cena Carmen El Agua",
+          "icon": "dinner_dining",
+          "description": "Cena fancy en un carmen con vistas espectaculares",
+          "location": [
+            {
+              "label": "Carmen El Agua, Albaicín, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Carmen+El+Agua+Granada"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Carmen%20El%20Agua%20Granada?width=600&height=400&nologo=true",
+            "alt": "Cena Carmen El Agua"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-6",
+      "dayNumber": 6,
+      "date": "2025-12-29",
+      "location": "Sierra Nevada",
+      "description": "Conociendo la nieve",
+      "activities": [
+        {
+          "id": "activity-6-1",
+          "time": "10:00",
+          "title": "Entrada a Estación Sierra Nevada",
+          "icon": "gondola_lift",
+          "description": "Recoger equipos y organizar subida a la montaña. ¡Comienza la aventura en la nieve!",
+          "location": [
+            {
+              "label": "Estación de Esquí Sierra Nevada, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Sierra%20Nevada%20Ski?width=600&height=400&nologo=true",
+            "alt": "Estación Sierra Nevada"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "https://sierranevada.es",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-6-2",
+          "time": "11:00",
+          "title": "Clases de Ski",
+          "icon": "downhill_skiing",
+          "description": "Clase de 3 horas donde besaremos la nieve 😄 Perfecta para principiantes",
+          "location": [
+            {
+              "label": "Pistas de Sierra Nevada, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Ski%20Lessons%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "alt": "Clases de Ski"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-6-3",
+          "time": "14:00",
+          "title": "Almuerzo tipo Picnic",
+          "icon": "takeout_dining",
+          "description": "Sanduchitos para comer entre pistas",
+          "location": [
+            {
+              "label": "Zona de descanso, Sierra Nevada, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Picnic%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "alt": "Almuerzo tipo Picnic"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-6-4",
+          "time": "15:00",
+          "title": "Práctica Libre de Ski",
+          "icon": "downhill_skiing",
+          "description": "Práctica libre de ski. ¡A demostrar lo aprendido!",
+          "location": [
+            {
+              "label": "Pistas de Sierra Nevada, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Ski%20Practice%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "alt": "Práctica Libre de Ski"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-6-5",
+          "time": "17:00",
+          "title": "Salida al Airbnb",
+          "icon": "airport_shuttle",
+          "description": "Bajada de la montaña y chill. Tiempo de descanso después de un día activo",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Return%20to%20Granada?width=600&height=400&nologo=true",
+            "alt": "Salida al Airbnb"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-6-6",
+          "time": "21:00",
+          "title": "Cena El Sintapujos / Perromedio",
+          "icon": "dinner_dining",
+          "description": "Pendiente definir cuál de los 2. Restaurantes locales con encanto",
+          "location": [
+            {
+              "label": "Centro de Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Restaurant%20Granada?width=600&height=400&nologo=true",
+            "alt": "Cena El Sintapujos / Perromedio"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-7",
+      "dayNumber": 7,
+      "date": "2025-12-30",
+      "location": "Sierra Nevada",
+      "description": "Chilling en la nieve",
+      "activities": [
+        {
+          "id": "activity-7-1",
+          "time": "10:00",
+          "title": "Entrada a Estación Sierra Nevada",
+          "icon": "gondola_lift",
+          "description": "Gente que va a esquiar y luego los aburridos. Día flexible",
+          "location": [
+            {
+              "label": "Estación de Esquí Sierra Nevada, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Sierra%20Nevada%20Ski?width=600&height=400&nologo=true",
+            "alt": "Estación Sierra Nevada"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-7-2",
+          "time": "11:00",
+          "title": "Tiempo Libre en la Nieve",
+          "icon": "ac_unit",
+          "description": "Juegos en la nieve, muñecos de nieve, o más ski para los atrevidos",
+          "location": [
+            {
+              "label": "Sierra Nevada, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada,+Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Snow%20Play%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "alt": "Tiempo Libre en la Nieve"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-7-3",
+          "time": "14:00",
+          "title": "Almuerzo en la Montaña",
+          "icon": "restaurant",
+          "description": "Restaurante en el parque. Comida caliente después de jugar en la nieve",
+          "location": [
+            {
+              "label": "Restaurante Sierra Nevada, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Restaurant%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "alt": "Almuerzo en la Montaña"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-7-4",
+          "time": "16:00",
+          "title": "Salida al Airbnb",
+          "icon": "airport_shuttle",
+          "description": "Bajada de la montaña y chill. Preparación para la noche especial",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Return%20to%20Granada?width=600&height=400&nologo=true",
+            "alt": "Salida al Airbnb"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-7-5",
+          "time": "18:30",
+          "title": "Tablao Flamenco",
+          "icon": "nightlife",
+          "description": "Show de flamenco en una cueva. ¡Experiencia auténtica granadina!",
+          "location": [
+            {
+              "label": "Sacromonte, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Tablao+Flamenco+Sacromonte+Granada"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Tablao%20Flamenco%20Granada?width=600&height=400&nologo=true",
+            "alt": "Tablao Flamenco"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-7-6",
+          "time": "21:00",
+          "title": "Cena en Palacio Andaluz Almona",
+          "icon": "dinner_dining",
+          "description": "Restaurante marroquí con ambiente especial",
+          "location": [
+            {
+              "label": "Palacio Andaluz Almona, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Palacio+Andaluz+Almona+Granada"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Moroccan%20Dinner?width=600&height=400&nologo=true",
+            "alt": "Cena en Palacio Andaluz Almona"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-8",
+      "dayNumber": 8,
+      "date": "2025-12-31",
+      "location": "Granada",
+      "description": "Yo no olvido el año viejo",
+      "activities": [
+        {
+          "id": "activity-8-1",
+          "time": "10:00",
+          "title": "Desayuno en Casa",
+          "icon": "egg_alt",
+          "description": "Desayuno tranqui en casa. Día relajado antes de la celebración",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Breakfast%20Home?width=600&height=400&nologo=true",
+            "alt": "Desayuno en Casa"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-8-2",
+          "time": "14:00",
+          "title": "Almuerzo en Bongo",
+          "icon": "restaurant",
+          "description": "Almuerzo comida española fusión. Restaurante moderno",
+          "location": [
+            {
+              "label": "Restaurante Bongo, Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Restaurante+Bongo+Granada"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Restaurant%20Bongo%20Granada?width=600&height=400&nologo=true",
+            "alt": "Almuerzo en Bongo"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-8-3",
+          "time": "20:00",
+          "title": "Cena de Fin de Año",
+          "icon": "brunch_dining",
+          "description": "Cena familiar y brindis. ¡Las 12 uvas de la suerte!",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/New%20Year%20Eve%20Party?width=600&height=400&nologo=true",
+            "alt": "Cena de Fin de Año"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-8-4",
+          "time": "22:00",
+          "title": "Fiestuqui",
+          "icon": "celebration",
+          "description": "DJ Law in the house. Telonero DJ Darby 🎉",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/New%20Year%20Party?width=600&height=400&nologo=true",
+            "alt": "Fiestuqui"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-9",
+      "dayNumber": 9,
+      "date": "2026-01-01",
+      "location": "Granada",
+      "description": "Asadito de año nuevo",
+      "activities": [
+        {
+          "id": "activity-9-1",
+          "time": "14:00",
+          "title": "Asado de Desenguayabe",
+          "icon": "outdoor_grill",
+          "description": "Asado de bienvenida del año como siempre. Tradición familiar",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/BBQ%20Friends?width=600&height=400&nologo=true",
+            "alt": "Asado de Desenguayabe"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-10",
+      "dayNumber": 10,
+      "date": "2026-01-02",
+      "location": "Granada",
+      "description": "Se acabó el paseo",
+      "activities": [
+        {
+          "id": "activity-10-1",
+          "time": "11:00",
+          "title": "Check-out Airbnb",
+          "icon": "airport_shuttle",
+          "description": "Regreso a casa. Hasta la próxima aventura",
+          "location": [
+            {
+              "label": "Granada, España",
+              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+            }
+          ],
+          "image": {
+            "url": "https://image.pollinations.ai/prompt/Check-out%20Airbnb?width=600&height=400&nologo=true",
+            "alt": "Check-out Airbnb"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

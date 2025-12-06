@@ -1,0 +1,72 @@
+.sidebar {
+  display: none;
+}
+
+.navItem {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  border-radius: var(--radius-m);
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  border: 1px solid transparent;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.navItem:hover {
+  background: var(--color-surface-var);
+}
+
+.navItem.active {
+  background: var(--color-container);
+  color: var(--color-on-container);
+  border: 1px solid var(--color-primary);
+}
+
+.navItem:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.navDayNum {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.navDate {
+  font-family: var(--font-brand);
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.navDesc {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.todayIndicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-tertiary-container);
+  margin-top: 4px;
+}
+
+@media (min-width: 900px) {
+  .sidebar {
+    display: block;
+    position: sticky;
+    top: 110px;
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    padding-right: 20px;
+  }
+}
+

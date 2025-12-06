@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada 2025 - Family Trip</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Text:wght@400;500&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-xxl: 48px;
+        }
+        
+        /* ===== LIGHT THEME - Winter Garden ===== */
+        [data-theme="light"] {
+            /* Primary - Transformative Teal */
+            --md-sys-color-primary: #2D7A6E;
+            --md-sys-color-on-primary: #FFFFFF;
+            --md-sys-color-primary-container: #C7F2E8;
+            --md-sys-color-on-primary-container: #003D33;
+            
+            /* Secondary - Fresh Purple */
+            --md-sys-color-secondary: #6B4E99;
+            --md-sys-color-on-secondary: #FFFFFF;
+            --md-sys-color-secondary-container: #E8D9F7;
+            --md-sys-color-on-secondary-container: #2A1A3D;
+            
+            /* Tertiary - Fern Green */
+            --md-sys-color-tertiary: #5A7A5C;
+            --md-sys-color-on-tertiary: #FFFFFF;
+            --md-sys-color-tertiary-container: #D8E8D9;
+            --md-sys-color-on-tertiary-container: #1A2E1B;
+            
+            /* Error */
+            --md-sys-color-error: #BA1A1A;
+            --md-sys-color-on-error: #FFFFFF;
+            --md-sys-color-error-container: #FFDAD6;
+            --md-sys-color-on-error-container: #410002;
+            
+            /* Surface & Background */
+            --md-sys-color-surface: #F8FBFB;
+            --md-sys-color-on-surface: #0D1F1F;
+            --md-sys-color-surface-variant: #D5E5E4;
+            --md-sys-color-on-surface-variant: #3F4947;
+            
+            /* Surface Containers */
+            --md-sys-color-surface-dim: #D8EBEB;
+            --md-sys-color-surface-bright: #F8FBFB;
+            --md-sys-color-surface-container-lowest: #FFFFFF;
+            --md-sys-color-surface-container-low: #EDF5F5;
+            --md-sys-color-surface-container: #E7EFEF;
+            --md-sys-color-surface-container-high: #E1E9E9;
+            --md-sys-color-surface-container-highest: #DBE3E3;
+            
+            /* Outline */
+            --md-sys-color-outline: #6F7978;
+            --md-sys-color-outline-variant: #BEC9C8;
+            
+            /* Inverse */
+            --md-sys-color-inverse-surface: #2E3635;
+            --md-sys-color-inverse-on-surface: #EDF5F5;
+            --md-sys-color-inverse-primary: #5FB8AC;
+        }
+        
+        /* ===== DARK THEME - Winter Garden ===== */
+        [data-theme="dark"] {
+            /* Primary - Transformative Teal */
+            --md-sys-color-primary: #5FB8AC;
+            --md-sys-color-on-primary: #003D33;
+            --md-sys-color-primary-container: #1F5951;
+            --md-sys-color-on-primary-container: #C7F2E8;
+            
+            /* Secondary - Fresh Purple */
+            --md-sys-color-secondary: #B39ADB;
+            --md-sys-color-on-secondary: #2A1A3D;
+            --md-sys-color-secondary-container: #4A3366;
+            --md-sys-color-on-secondary-container: #E8D9F7;
+            
+            /* Tertiary - Fern Green */
+            --md-sys-color-tertiary: #90B592;
+            --md-sys-color-on-tertiary: #1A2E1B;
+            --md-sys-color-tertiary-container: #3D5940;
+            --md-sys-color-on-tertiary-container: #D8E8D9;
+            
+            /* Error */
+            --md-sys-color-error: #FFB4AB;
+            --md-sys-color-on-error: #690005;
+            --md-sys-color-error-container: #93000A;
+            --md-sys-color-on-error-container: #FFDAD6;
+            
+            /* Surface & Background */
+            --md-sys-color-surface: #0D1F1F;
+            --md-sys-color-on-surface: #E8F5F5;
+            --md-sys-color-surface-variant: #3F4947;
+            --md-sys-color-on-surface-variant: #BEC9C8;
+            
+            /* Surface Containers */
+            --md-sys-color-surface-dim: #0D1F1F;
+            --md-sys-color-surface-bright: #333A39;
+            --md-sys-color-surface-container-lowest: #080E0E;
+            --md-sys-color-surface-container-low: #1A2D2D;
+            --md-sys-color-surface-container: #1E2726;
+            --md-sys-color-surface-container-high: #252E2E;
+            --md-sys-color-surface-container-highest: #303938;
+            
+            /* Outline */
+            --md-sys-color-outline: #889392;
+            --md-sys-color-outline-variant: #3F4947;
+            
+            /* Inverse */
+            --md-sys-color-inverse-surface: #E8F5F5;
+            --md-sys-color-inverse-on-surface: #2E3635;
+            --md-sys-color-inverse-primary: #2D7A6E;
+        }
+        
+        body {
+            font-family: 'Google Sans Text', 'Roboto', sans-serif;
+            background: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+            line-height: 1.5;
+            overflow-x: hidden;
+            transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                        color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Typography - Google Style */
+        .display-large {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 57px;
+            font-weight: 400;
+            line-height: 64px;
+        }
+        
+        .display-medium {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 52px;
+        }
+        
+        .headline-large {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 40px;
+        }
+        
+        .headline-medium {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+        
+        .title-large {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        
+        .title-medium {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        
+        .body-large {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        
+        .body-medium {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        
+        .label-large {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+        }
+        
+        .label-small {
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        /* Material Symbols */
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            user-select: none;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--md-sys-color-primary) 0%, var(--md-sys-color-secondary) 100%);
+            color: var(--md-sys-color-on-primary);
+            padding: var(--spacing-xxl) var(--spacing-lg);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '🌿';
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.08;
+            top: -20px;
+            left: 10%;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        .header::after {
+            content: '❄️';
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.08;
+            top: -10px;
+            right: 10%;
+            animation: float 25s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(20px) rotate(5deg); }
+        }
+        
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .theme-toggle .material-symbols-rounded {
+            font-size: 20px;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+        }
+        
+        /* Layout */
+        .agenda-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-lg);
+        }
+        
+        /* Day Navigation Sidebar */
+        .day-nav {
+            position: sticky;
+            top: var(--spacing-lg);
+            height: fit-content;
+        }
+        
+        .day-nav-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            background: transparent;
+            position: relative;
+        }
+        
+        .day-nav-item:hover {
+            background: rgba(45, 122, 110, 0.08);
+        }
+        
+        .day-nav-item.active {
+            background: var(--md-sys-color-secondary-container);
+            color: var(--md-sys-color-on-secondary-container);
+        }
+        
+        .day-nav-item.past {
+            opacity: 0.6;
+        }
+        
+        .day-nav-item.current::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 60%;
+            background: var(--md-sys-color-secondary);
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .day-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            font-weight: 500;
+            flex-shrink: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .day-nav-item.current .day-number {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            box-shadow: 0 2px 8px rgba(107, 78, 153, 0.3);
+        }
+        
+        .day-nav-item.past .day-number {
+            background: var(--md-sys-color-surface-variant);
+            color: var(--md-sys-color-on-surface-variant);
+        }
+        
+        .day-info {
+            flex: 1;
+        }
+        
+        .day-date {
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0.7;
+            margin-bottom: 2px;
+        }
+        
+        .day-location {
+            font-weight: 500;
+        }
+        
+        /* Content Area */
+        .content-area {
+            min-height: 600px;
+        }
+        
+        .day-section {
+            margin-bottom: var(--spacing-xxl);
+            opacity: 1;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .day-section.collapsed {
+            opacity: 0.6;
+            max-height: 80px;
+            overflow: hidden;
+        }
+        
+        .day-header-main {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--md-sys-color-outline-variant);
+            cursor: pointer;
+        }
+        
+        .day-header-main:hover {
+            opacity: 0.8;
+        }
+        
+        .expand-icon {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .day-section.collapsed .expand-icon {
+            transform: rotate(-90deg);
+        }
+        
+        /* Activity Card - Google Style */
+        .activity-card {
+            background: var(--md-sys-color-surface-container-low);
+            border: 1px solid var(--md-sys-color-outline-variant);
+            border-radius: 16px;
+            margin-bottom: var(--spacing-md);
+            overflow: hidden;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .activity-card:hover {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.1);
+            border-color: var(--md-sys-color-primary);
+            background: var(--md-sys-color-surface-container);
+        }
+        
+        .activity-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-lg);
+            cursor: pointer;
+        }
+        
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--md-sys-color-secondary-container);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--md-sys-color-on-secondary-container);
+            flex-shrink: 0;
+        }
+        
+        .activity-main {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .activity-time {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--md-sys-color-tertiary);
+            margin-bottom: 4px;
+        }
+        
+        .activity-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+        
+        .activity-expand-btn {
+            color: var(--md-sys-color-on-surface-variant);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .activity-card.expanded .activity-expand-btn {
+            transform: rotate(180deg);
+        }
+        
+        /* Activity Details */
+        .activity-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .activity-card.expanded .activity-details {
+            max-height: 1000px;
+        }
+        
+        .activity-content {
+            padding: 0 var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
+            border-top: 1px solid var(--md-sys-color-outline-variant);
+        }
+        
+        .activity-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: var(--spacing-md) 0;
+        }
+        
+        .activity-description {
+            margin: var(--spacing-md) 0;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+        
+        .activity-location {
+            display: flex;
+            align-items: start;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-sm);
+            background: var(--md-sys-color-surface-variant);
+            border-radius: 8px;
+            margin: var(--spacing-md) 0;
+            font-size: 14px;
+        }
+        
+        /* Action Buttons */
+        .activity-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            border: none;
+            white-space: nowrap;
+        }
+        
+        .btn-filled {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+        }
+        
+        .btn-filled:hover {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        
+        .btn-tonal {
+            background: var(--md-sys-color-secondary-container);
+            color: var(--md-sys-color-on-secondary-container);
+        }
+        
+        .btn-tonal:hover {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .btn-outlined {
+            background: transparent;
+            color: var(--md-sys-color-primary);
+            border: 1px solid var(--md-sys-color-outline);
+        }
+        
+        .btn-outlined:hover {
+            background: rgba(45, 122, 110, 0.08);
+        }
+        
+        /* Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            background: var(--md-sys-color-secondary-container);
+            color: var(--md-sys-color-on-secondary-container);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .agenda-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .day-nav {
+                position: static;
+                display: flex;
+                overflow-x: auto;
+                gap: var(--spacing-sm);
+                padding-bottom: var(--spacing-sm);
+            }
+            
+            .day-nav-item {
+                flex-direction: column;
+                min-width: 100px;
+                text-align: center;
+            }
+            
+            .display-large {
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+        
+        /* Theme Transition */
+        html {
+            transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            transition-property: background-color, border-color, color, fill, stroke;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .no-transition * {
+            transition: none !important;
+        }
+    </style>
+</head>
+<body class="no-transition">
+    <!-- Header -->
+    <header class="header">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span class="material-symbols-rounded" id="themeIcon">dark_mode</span>
+            <span id="themeLabel">Dark</span>
+        </button>
+        <div class="container">
+            <div class="display-medium" style="margin-bottom: 8px;">Granada 2025-2026 🌿</div>
+            <div class="title-large" style="opacity: 0.9;">Aventura Familiar</div>
+            <div class="body-large" style="margin-top: 8px; opacity: 0.8;">27 Diciembre - 2 Enero • Granada & Sierra Nevada</div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="agenda-layout">
+            <!-- Day Navigation Sidebar -->
+            <aside class="day-nav" id="dayNav">
+                <!-- Days will be generated dynamically -->
+            </aside>
+            
+            <!-- Content Area -->
+            <main class="content-area" id="contentArea">
+                <!-- Content will be generated dynamically -->
+            </main>
+        </div>
+    </div>
+    
+    <script>
+        // Trip Data from CSV
+        const tripData = [
+            {
+                date: '2025-12-27',
+                dayNumber: 4,
+                location: 'Granada',
+                theme: 'El centro de Graná',
+                activities: [
+                    {
+                        time: '13:00',
+                        title: 'Check-in Airbnb',
+                        icon: 'hotel',
+                        description: 'Llegada y descarga de maletas',
+                        location: 'Airbnb Granada Centro',
+                        image: 'https://images.unsplash.com/photo-1567191134654-29b886dd4fad?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '16:30',
+                        title: 'Free Walking Tour',
+                        icon: 'directions_walk',
+                        description: 'Encuentro en Bib-Rambla junto a la fuente de los gigantes. Recorrido por el centro histórico de Granada',
+                        location: 'Plaza Bib-Rambla, Granada',
+                        image: 'https://images.unsplash.com/photo-1600775659382-6d2b3a2e4d1b?q=80&w=800&h=400&fit=crop',
+                        links: [
+                            { label: 'Directions', url: 'https://www.google.com/maps/search/?api=1&query=Plaza+Bib-Rambla+Granada', icon: 'directions' }
+                        ]
+                    },
+                    {
+                        time: '19:30',
+                        title: 'Cena Los Manueles',
+                        icon: 'restaurant',
+                        description: 'El restaurante Los Manueles es muy tradicional y tiene tapeo local. Auténtica comida granadina',
+                        location: 'Restaurante Los Manueles, Granada',
+                        image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&h=400&fit=crop',
+                        links: [
+                            { label: 'Directions', url: 'https://www.google.com/maps/search/?api=1&query=Los+Manueles+Granada', icon: 'directions' }
+                        ]
+                    }
+                ]
+            },
+            {
+                date: '2025-12-28',
+                dayNumber: 5,
+                location: 'Granada',
+                theme: 'Un poco de historia Nazarí',
+                activities: [
+                    {
+                        time: '11:00',
+                        title: 'Visita a La Alhambra de Granada',
+                        icon: 'mosque',
+                        description: 'Visita de 2 horas de la Alhambra. Explora uno de los palacios más impresionantes del mundo islámico',
+                        location: 'La Alhambra, Granada',
+                        image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=800&h=400&fit=crop',
+                        links: [
+                            { label: 'Directions', url: 'https://www.google.com/maps/search/?api=1&query=Alhambra+Granada', icon: 'directions' },
+                            { label: 'Alhambra Website', url: 'https://www.alhambra-patronato.es', icon: 'link' }
+                        ]
+                    },
+                    {
+                        time: '13:00',
+                        title: 'Entrada a Palacios Nazaríes',
+                        icon: 'castle',
+                        description: 'Recorrido final de 1 hora por los impresionantes Palacios Nazaríes',
+                        location: 'Palacios Nazaríes, Alhambra',
+                        image: 'https://images.unsplash.com/photo-1571074689194-95c880b3cd9e?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '15:30',
+                        title: 'Bar Hopping de Tapas',
+                        icon: 'tapas',
+                        description: 'Almuerzo a lo español de comer tapas en varios bares. ¡En Granada las tapas son gratis con la bebida!',
+                        location: 'Centro de Granada',
+                        image: 'https://images.unsplash.com/photo-1590005176489-db2e714711fc?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '17:00',
+                        title: 'Mirador de San Nicolás',
+                        icon: 'tour',
+                        description: 'Recorrer los barrios del Albaicín y disfrutar de las mejores vistas de la Alhambra desde el Mirador',
+                        location: 'Mirador de San Nicolás, Albaicín',
+                        image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=800&h=400&fit=crop',
+                        links: [
+                            { label: 'Directions', url: 'https://www.google.com/maps/search/?api=1&query=Mirador+San+Nicolas+Granada', icon: 'directions' }
+                        ]
+                    },
+                    {
+                        time: '20:00',
+                        title: 'Cena Carmen El Agua',
+                        icon: 'dinner_dining',
+                        description: 'Cena fancy en un carmen con vistas espectaculares',
+                        location: 'Carmen El Agua, Albaicín',
+                        image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    }
+                ]
+            },
+            {
+                date: '2025-12-29',
+                dayNumber: 6,
+                location: 'Sierra Nevada',
+                theme: 'Conociendo la nieve',
+                activities: [
+                    {
+                        time: '10:00',
+                        title: 'Entrada a Estación Sierra Nevada',
+                        icon: 'gondola_lift',
+                        description: 'Recoger equipos y organizar subida a la montaña. ¡Comienza la aventura en la nieve!',
+                        location: 'Estación de Esquí Sierra Nevada',
+                        image: 'https://images.unsplash.com/photo-1605540436563-5bca919ae766?q=80&w=800&h=400&fit=crop',
+                        links: [
+                            { label: 'Directions', url: 'https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort', icon: 'directions' },
+                            { label: 'Sierra Nevada', url: 'https://sierranevada.es', icon: 'link' }
+                        ]
+                    },
+                    {
+                        time: '11:00',
+                        title: 'Clases de Ski',
+                        icon: 'downhill_skiing',
+                        description: 'Clase de 3 horas donde besaremos la nieve 😄 Perfecta para principiantes',
+                        location: 'Pistas de Sierra Nevada',
+                        image: 'https://images.unsplash.com/photo-1551524559-8af4e6624178?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '14:00',
+                        title: 'Almuerzo tipo Picnic',
+                        icon: 'takeout_dining',
+                        description: 'Sanduchitos para comer entre pistas',
+                        location: 'Zona de descanso, Sierra Nevada',
+                        image: 'https://images.unsplash.com/photo-1608613304899-ea8098577e38?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '15:00',
+                        title: 'Práctica Libre de Ski',
+                        icon: 'downhill_skiing',
+                        description: 'Práctica libre de ski. ¡A demostrar lo aprendido!',
+                        location: 'Pistas de Sierra Nevada',
+                        image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '17:00',
+                        title: 'Salida al Airbnb',
+                        icon: 'airport_shuttle',
+                        description: 'Bajada de la montaña y chill. Tiempo de descanso después de un día activo',
+                        location: 'De vuelta a Granada',
+                        image: 'https://images.unsplash.com/photo-1527489377706-5bf97e608852?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '21:00',
+                        title: 'Cena El Sintapujos / Perromedio',
+                        icon: 'dinner_dining',
+                        description: 'Pendiente definir cuál de los 2. Restaurantes locales con encanto',
+                        location: 'Centro de Granada',
+                        image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    }
+                ]
+            },
+            {
+                date: '2025-12-30',
+                dayNumber: 7,
+                location: 'Sierra Nevada',
+                theme: 'Chilling en la nieve',
+                activities: [
+                    {
+                        time: '10:00',
+                        title: 'Entrada a Estación Sierra Nevada',
+                        icon: 'gondola_lift',
+                        description: 'Gente que va a esquiar y luego los aburridos. Día flexible',
+                        location: 'Estación de Esquí Sierra Nevada',
+                        image: 'https://images.unsplash.com/photo-1605540436563-5bca919ae766?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '11:00',
+                        title: 'Tiempo Libre en la Nieve',
+                        icon: 'ac_unit',
+                        description: 'Juegos en la nieve, muñecos de nieve, o más ski para los atrevidos',
+                        location: 'Sierra Nevada',
+                        image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '14:00',
+                        title: 'Almuerzo en la Montaña',
+                        icon: 'restaurant',
+                        description: 'Restaurante en el parque. Comida caliente después de jugar en la nieve',
+                        location: 'Restaurante Sierra Nevada',
+                        image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '16:00',
+                        title: 'Salida al Airbnb',
+                        icon: 'airport_shuttle',
+                        description: 'Bajada de la montaña y chill. Preparación para la noche especial',
+                        location: 'De vuelta a Granada',
+                        image: 'https://images.unsplash.com/photo-1527489377706-5bf97e608852?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '18:30',
+                        title: 'Tablao Flamenco',
+                        icon: 'nightlife',
+                        description: 'Show de flamenco en una cueva. ¡Experiencia auténtica granadina!',
+                        location: 'Sacromonte, Granada',
+                        image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800&h=400&fit=crop',
+                        links: [
+                            { label: 'Directions', url: 'https://www.google.com/maps/search/?api=1&query=Tablao+Flamenco+Sacromonte+Granada', icon: 'directions' }
+                        ]
+                    },
+                    {
+                        time: '21:00',
+                        title: 'Cena en Palacio Andaluz Almona',
+                        icon: 'dinner_dining',
+                        description: 'Restaurante marroquí con ambiente especial',
+                        location: 'Palacio Andaluz Almona, Granada',
+                        image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    }
+                ]
+            },
+            {
+                date: '2025-12-31',
+                dayNumber: 8,
+                location: 'Granada',
+                theme: 'Yo no olvido el año viejo',
+                activities: [
+                    {
+                        time: '10:00',
+                        title: 'Desayuno en Casa',
+                        icon: 'egg_alt',
+                        description: 'Desayuno tranqui en casa. Día relajado antes de la celebración',
+                        location: 'Airbnb',
+                        image: 'https://images.unsplash.com/photo-1533920379810-6bedac961555?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '14:00',
+                        title: 'Almuerzo en Bongo',
+                        icon: 'restaurant',
+                        description: 'Almuerzo comida española fusión. Restaurante moderno',
+                        location: 'Restaurante Bongo, Granada',
+                        image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '20:00',
+                        title: 'Cena de Fin de Año',
+                        icon: 'brunch_dining',
+                        description: 'Cena familiar y brindis. ¡Las 12 uvas de la suerte!',
+                        location: 'Airbnb',
+                        image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    },
+                    {
+                        time: '22:00',
+                        title: 'Fiestuqui',
+                        icon: 'celebration',
+                        description: 'DJ Law in the house. Telonero DJ Darby 🎉',
+                        location: 'Airbnb',
+                        image: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    }
+                ]
+            },
+            {
+                date: '2026-01-01',
+                dayNumber: 9,
+                location: 'Granada',
+                theme: 'Asadito de año nuevo',
+                activities: [
+                    {
+                        time: '14:00',
+                        title: 'Asado de Desenguayabe',
+                        icon: 'outdoor_grill',
+                        description: 'Asado de bienvenida del año como siempre. Tradición familiar',
+                        location: 'Airbnb',
+                        image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    }
+                ]
+            },
+            {
+                date: '2026-01-02',
+                dayNumber: 10,
+                location: 'Granada',
+                theme: 'Se acabó el paseo',
+                activities: [
+                    {
+                        time: '11:00',
+                        title: 'Check-out Airbnb',
+                        icon: 'airport_shuttle',
+                        description: 'Regreso a casa. Hasta la próxima aventura',
+                        location: 'Airbnb Granada',
+                        image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=800&h=400&fit=crop',
+                        links: []
+                    }
+                ]
+            }
+        ];
+        
+        // Get today's date for comparison (for demo, we'll use Dec 28, 2025 as "today")
+        const TODAY = new Date('2025-12-28');
+        
+        // Theme Management
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            updateThemeButton(newTheme);
+        }
+        
+        function updateThemeButton(theme) {
+            const icon = document.getElementById('themeIcon');
+            const label = document.getElementById('themeLabel');
+            
+            if (theme === 'dark') {
+                icon.textContent = 'light_mode';
+                label.textContent = 'Light';
+            } else {
+                icon.textContent = 'dark_mode';
+                label.textContent = 'Dark';
+            }
+        }
+        
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeButton(savedTheme);
+            
+            setTimeout(() => {
+                document.body.classList.remove('no-transition');
+            }, 100);
+        }
+        
+        function getDayStatus(dateStr) {
+            const dayDate = new Date(dateStr);
+            dayDate.setHours(0, 0, 0, 0);
+            const today = new Date(TODAY);
+            today.setHours(0, 0, 0, 0);
+            
+            if (dayDate < today) return 'past';
+            if (dayDate.getTime() === today.getTime()) return 'current';
+            return 'future';
+        }
+        
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+            return `${date.getDate()} ${months[date.getMonth()]}`;
+        }
+        
+        function renderDayNavigation() {
+            const dayNav = document.getElementById('dayNav');
+            dayNav.innerHTML = tripData.map((day, index) => {
+                const status = getDayStatus(day.date);
+                const statusClass = status === 'current' ? 'current' : status;
+                
+                return `
+                    <div class="day-nav-item ${statusClass}" data-day="${index}" onclick="scrollToDay(${index})">
+                        <div class="day-number">Día ${day.dayNumber}</div>
+                        <div class="day-info">
+                            <div class="day-date">${formatDate(day.date)}</div>
+                            <div class="day-location">${day.location}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function renderContent() {
+            const contentArea = document.getElementById('contentArea');
+            contentArea.innerHTML = tripData.map((day, dayIndex) => {
+                const status = getDayStatus(day.date);
+                const isCollapsed = status === 'past';
+                
+                return `
+                    <section class="day-section ${isCollapsed ? 'collapsed' : ''}" id="day-${dayIndex}" data-status="${status}">
+                        <div class="day-header-main" onclick="toggleDaySection(${dayIndex})">
+                            <span class="material-symbols-rounded expand-icon">expand_more</span>
+                            <div>
+                                <div class="headline-medium">Día ${day.dayNumber}: ${day.location}</div>
+                                <div class="body-medium" style="color: var(--md-sys-color-on-surface-variant);">
+                                    ${formatDate(day.date)} • ${day.theme}
+                                    ${status === 'current' ? ' <span class="badge">Hoy</span>' : ''}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="activities-list">
+                            ${day.activities.map((activity, actIndex) => `
+                                <div class="activity-card" id="activity-${dayIndex}-${actIndex}">
+                                    <div class="activity-header" onclick="toggleActivity(${dayIndex}, ${actIndex})">
+                                        <div class="activity-icon">
+                                            <span class="material-symbols-rounded">${activity.icon}</span>
+                                        </div>
+                                        <div class="activity-main">
+                                            <div class="activity-time">${activity.time}</div>
+                                            <div class="activity-title">${activity.title}</div>
+                                        </div>
+                                        <span class="material-symbols-rounded activity-expand-btn">expand_more</span>
+                                    </div>
+                                    
+                                    <div class="activity-details">
+                                        <div class="activity-content">
+                                            <img src="${activity.image}" alt="${activity.title}" class="activity-image">
+                                            
+                                            <p class="activity-description">${activity.description}</p>
+                                            
+                                            <div class="activity-location">
+                                                <span class="material-symbols-rounded" style="color: var(--md-sys-color-tertiary);">location_on</span>
+                                                <span>${activity.location}</span>
+                                            </div>
+                                            
+                                            ${activity.links.length > 0 ? `
+                                            <div class="activity-actions">
+                                                <button class="btn btn-tonal" onclick="addToCalendar()">
+                                                    <span class="material-symbols-rounded">event</span>
+                                                    Añadir al Calendario
+                                                </button>
+                                                ${activity.links.map(link => `
+                                                    <a href="${link.url}" target="_blank" class="btn btn-outlined">
+                                                        <span class="material-symbols-rounded">${link.icon}</span>
+                                                        ${link.label}
+                                                    </a>
+                                                `).join('')}
+                                            </div>
+                                            ` : ''}
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </section>
+                `;
+            }).join('');
+        }
+        
+        function toggleDaySection(dayIndex) {
+            const section = document.getElementById(`day-${dayIndex}`);
+            section.classList.toggle('collapsed');
+        }
+        
+        function toggleActivity(dayIndex, actIndex) {
+            const card = document.getElementById(`activity-${dayIndex}-${actIndex}`);
+            card.classList.toggle('expanded');
+        }
+        
+        function scrollToDay(dayIndex) {
+            const section = document.getElementById(`day-${dayIndex}`);
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            if (section.classList.contains('collapsed')) {
+                section.classList.remove('collapsed');
+            }
+        }
+        
+        function addToCalendar() {
+            alert('¡Funcionalidad de calendario próximamente!');
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            renderDayNavigation();
+            renderContent();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.iconBtn {
+  background: var(--color-surface-var);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.iconBtn:hover {
+  background: var(--color-container);
+  color: var(--color-on-container);
+}
+
+.iconBtn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+

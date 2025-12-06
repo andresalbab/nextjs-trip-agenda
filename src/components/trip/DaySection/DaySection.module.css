@@ -1,0 +1,49 @@
+.dayGroup {
+  margin-bottom: 40px;
+}
+
+.dayGroupHeader {
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-surface-var);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dayTitle {
+  font-family: var(--font-brand);
+  font-size: var(--type-headline-m);
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.subtitle {
+  font-family: var(--font-plain);
+  color: var(--color-outline);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pastDay {
+  opacity: 0.6;
+  filter: grayscale(0.9);
+  transition: all var(--transition-base);
+}
+
+.pastDay:hover {
+  opacity: 0.95;
+  filter: grayscale(0.5);
+}
+
+.pastDay .activities {
+  pointer-events: auto;
+}
+

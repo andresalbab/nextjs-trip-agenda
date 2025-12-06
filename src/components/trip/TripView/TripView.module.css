@@ -1,0 +1,21 @@
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (min-width: 900px) {
+  .mainLayout {
+    grid-template-columns: var(--sidebar-width) 1fr;
+  }
+}
+

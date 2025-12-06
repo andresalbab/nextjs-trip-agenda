@@ -1,0 +1,26 @@
+[data-theme="earthy"][data-mode="light"] {
+  --color-primary: #5D4037;
+  --color-on-primary: #FFFFFF;
+  --color-tertiary-container: #E2E8C0;
+  --color-on-tertiary-container: #1D200E;
+  --color-container: #D7CCC8;
+  --color-on-container: #3E2723;
+  --color-surface: #FDFCF5;
+  --color-surface-var: #EFEBE9;
+  --color-outline: #8D6E63;
+  --color-text: #1C1B1F;
+}
+
+[data-theme="earthy"][data-mode="dark"] {
+  --color-primary: #D7CCC8;
+  --color-on-primary: #3E2723;
+  --color-tertiary-container: #3F4823;
+  --color-on-tertiary-container: #DCE5B9;
+  --color-container: #5D4037;
+  --color-on-container: #FFCCBC;
+  --color-surface: #1E1B1A;
+  --color-surface-var: #2C2523;
+  --color-outline: #A1887F;
+  --color-text: #E6E1E5;
+}
+

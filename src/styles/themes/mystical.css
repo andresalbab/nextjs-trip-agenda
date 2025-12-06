@@ -1,0 +1,26 @@
+[data-theme="mystical"][data-mode="light"] {
+  --color-primary: #6750A4;
+  --color-on-primary: #FFFFFF;
+  --color-tertiary-container: #FFD8E4;
+  --color-on-tertiary-container: #31111D;
+  --color-container: #EADDFF;
+  --color-on-container: #21005D;
+  --color-surface: #F7F2FA;
+  --color-surface-var: #E7E0EC;
+  --color-outline: #79747E;
+  --color-text: #1C1B1F;
+}
+
+[data-theme="mystical"][data-mode="dark"] {
+  --color-primary: #D0BCFF;
+  --color-on-primary: #381E72;
+  --color-tertiary-container: #633B48;
+  --color-on-tertiary-container: #FFD8E4;
+  --color-container: #4F378B;
+  --color-on-container: #EADDFF;
+  --color-surface: #141218;
+  --color-surface-var: #2B2930;
+  --color-outline: #938F99;
+  --color-text: #E6E1E5;
+}
+

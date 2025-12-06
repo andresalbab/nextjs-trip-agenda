@@ -1,0 +1,32 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(253, 252, 245, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-surface-var);
+  transition: background var(--transition-base), border-color var(--transition-base);
+}
+
+[data-mode="dark"] .header {
+  background: rgba(30, 27, 26, 0.85);
+}
+
+.title {
+  font-family: var(--font-brand);
+  font-size: var(--type-headline-s);
+  font-weight: 400;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--color-outline);
+  margin-top: 4px;
+}
+

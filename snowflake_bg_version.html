@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="earthy" data-mode="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Viaje 2025</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- DESIGN TOKENS & THEMES --- */
+        
+        :root {
+            /* TYPOGRAPHY SYSTEM (Material 3 Scale) */
+            --font-brand: 'Google Sans', sans-serif;
+            --font-plain: 'Roboto', sans-serif;
+            
+            /* Headline Small (App Header) */
+            --type-headline-s: 24px;
+            --type-headline-s-line: 32px;
+            
+            /* Headline Medium (Date Headers) */
+            --type-headline-m: 28px;
+            --type-headline-m-line: 36px;
+
+            /* Dimensions */
+            --sidebar-width: 280px;
+            --radius-l: 24px;
+            --radius-m: 16px;
+            --radius-s: 8px;
+
+            /* Transitions */
+            --ease-spring: cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        /* --- 1. EARTHY INDULGENCE (Tierra) --- */
+        [data-theme="earthy"][data-mode="light"] {
+            --color-primary: #5D4037;
+            --color-on-primary: #FFFFFF;
+            --color-tertiary-container: #E2E8C0; 
+            --color-on-tertiary-container: #1D200E;
+            --color-container: #D7CCC8;
+            --color-on-container: #3E2723;
+            --color-surface: #FDFCF5;
+            --color-surface-var: #EFEBE9;
+            --color-outline: #8D6E63;
+            --color-text: #1C1B1F;
+        }
+        [data-theme="earthy"][data-mode="dark"] {
+            --color-primary: #D7CCC8;
+            --color-on-primary: #3E2723;
+            --color-tertiary-container: #3F4823;
+            --color-on-tertiary-container: #DCE5B9;
+            --color-container: #5D4037;
+            --color-on-container: #FFCCBC;
+            --color-surface: #1E1B1A;
+            --color-surface-var: #2C2523;
+            --color-outline: #A1887F;
+            --color-text: #E6E1E5;
+        }
+
+        /* --- 2. MYSTICAL TWILIGHT (Místico) --- */
+        [data-theme="mystical"][data-mode="light"] {
+            --color-primary: #6750A4;
+            --color-on-primary: #FFFFFF;
+            --color-tertiary-container: #FFD8E4;
+            --color-on-tertiary-container: #31111D;
+            --color-container: #EADDFF;
+            --color-on-container: #21005D;
+            --color-surface: #F7F2FA;
+            --color-surface-var: #E7E0EC;
+            --color-outline: #79747E;
+            --color-text: #1C1B1F;
+        }
+        [data-theme="mystical"][data-mode="dark"] {
+            --color-primary: #D0BCFF;
+            --color-on-primary: #381E72;
+            --color-tertiary-container: #633B48;
+            --color-on-tertiary-container: #FFD8E4;
+            --color-container: #4F378B;
+            --color-on-container: #EADDFF;
+            --color-surface: #141218;
+            --color-surface-var: #2B2930;
+            --color-outline: #938F99;
+            --color-text: #E6E1E5;
+        }
+
+        /* --- 3. CLASSIC FRESH (Clásico) --- */
+        [data-theme="classic"][data-mode="light"] {
+            --color-primary: #006C4C;
+            --color-on-primary: #FFFFFF;
+            --color-tertiary-container: #FDE293;
+            --color-on-tertiary-container: #251A00;
+            --color-container: #89F8C7;
+            --color-on-container: #002114;
+            --color-surface: #FBFDF9;
+            --color-surface-var: #DBE5DE;
+            --color-outline: #707973;
+            --color-text: #191C1B;
+        }
+        [data-theme="classic"][data-mode="dark"] {
+            --color-primary: #6CDCAC;
+            --color-on-primary: #003826;
+            --color-tertiary-container: #554400;
+            --color-on-tertiary-container: #FDE293;
+            --color-container: #005138;
+            --color-on-container: #89F8C7;
+            --color-surface: #191C1B;
+            --color-surface-var: #2F312E;
+            --color-outline: #89938D;
+            --color-text: #E1E3DF;
+        }
+
+        /* --- RESET & BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--color-surface);
+            color: var(--color-text);
+            font-family: var(--font-plain);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- SNOW EFFECT --- */
+        .snow-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 0; overflow: hidden;
+        }
+        .snowflake {
+            position: absolute; color: var(--color-primary);
+            opacity: 0.15; animation: fall linear infinite;
+        }
+        @keyframes fall { to { transform: translateY(110vh); } }
+
+        /* --- HEADER --- */
+        header {
+            position: sticky; top: 0; z-index: 50;
+            background: rgba(var(--color-surface), 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 16px 24px;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid var(--color-surface-var);
+        }
+        h1 {
+            font-family: var(--font-brand);
+            font-size: var(--type-headline-s);
+            line-height: var(--type-headline-s-line);
+            font-weight: 400;
+            color: var(--color-primary);
+        }
+        .controls { display: flex; gap: 8px; }
+        .icon-btn {
+            background: var(--color-surface-var);
+            border: none; padding: 10px; border-radius: 50%;
+            cursor: pointer; color: var(--color-text);
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s;
+        }
+        .icon-btn:hover { background: var(--color-container); color: var(--color-on-container); }
+
+        /* --- MAIN LAYOUT GRID --- */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- SIDEBAR --- */
+        .sidebar { display: none; }
+
+        /* --- FEED --- */
+        .feed { display: flex; flex-direction: column; gap: 40px; }
+        
+        .day-group-header {
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-surface-var);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .day-group-header h2 {
+            font-family: var(--font-brand);
+            font-size: var(--type-headline-m);
+            line-height: var(--type-headline-m-line);
+            font-weight: 400;
+            color: var(--color-text);
+        }
+        .day-group-header .subtitle {
+            font-family: var(--font-plain);
+            color: var(--color-outline);
+            font-weight: 500;
+            font-size: 14px;
+            display: block;
+        }
+        
+        /* TODAY BADGE */
+        .badge-today {
+            background-color: var(--color-tertiary-container);
+            color: var(--color-on-tertiary-container);
+            padding: 6px 16px; 
+            border-radius: 8px;
+            font-size: 14px; 
+            font-weight: 600; 
+            text-transform: capitalize;
+            letter-spacing: 0.2px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* --- CARD --- */
+        .activity-card {
+            background: var(--color-surface-var);
+            border-radius: var(--radius-m);
+            overflow: hidden;
+            margin-bottom: 12px;
+            transition: transform 0.2s;
+        }
+        .activity-card:hover { transform: translateX(4px); }
+
+        .card-header {
+            padding: 18px 16px;
+            display: flex; align-items: center; gap: 16px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .card-icon {
+            width: 40px; height: 40px;
+            background: var(--color-container);
+            color: var(--color-on-container);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .time-slot {
+            font-size: 14px; font-weight: 600; color: var(--color-outline);
+            width: 50px; text-align: right;
+        }
+        .card-title {
+            flex-grow: 1;
+            font-family: var(--font-brand);
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .expand-icon { transition: transform 0.3s ease; }
+        .activity-card.open .expand-icon { transform: rotate(180deg); }
+
+        .card-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+            background: rgba(0,0,0,0.02);
+        }
+        
+        .content-inner {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .activity-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: var(--radius-s);
+            background-color: var(--color-outline);
+        }
+
+        .activity-details { display: flex; flex-direction: column; gap: 16px; }
+        .activity-desc { font-size: 16px; line-height: 1.6; color: var(--color-text); }
+        
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+        .chip {
+            font-size: 13px; padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--color-outline);
+            color: var(--color-outline);
+            font-weight: 500;
+        }
+
+        .location-row {
+            display: flex; align-items: center; gap: 6px;
+            font-size: 14px; color: var(--color-primary);
+            text-decoration: none; font-weight: 500;
+        }
+        
+        .action-buttons { display: flex; gap: 12px; margin-top: 8px; }
+        .btn {
+            flex: 1; padding: 12px; border-radius: 100px; border: none;
+            font-family: var(--font-brand); font-size: 14px; font-weight: 600;
+            cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+            transition: opacity 0.2s;
+        }
+        .btn-primary { background: var(--color-primary); color: var(--color-on-primary); }
+        .btn-secondary { background: transparent; border: 1px solid var(--color-outline); color: var(--color-text); }
+        .btn:hover { opacity: 0.9; }
+
+        /* --- DESKTOP --- */
+        @media (min-width: 900px) {
+            .main-layout { grid-template-columns: var(--sidebar-width) 1fr; }
+            .sidebar {
+                display: block;
+                position: sticky; top: 110px; height: calc(100vh - 130px);
+                overflow-y: auto; padding-right: 20px;
+            }
+            .nav-item {
+                display: block; width: 100%; text-align: left; padding: 16px;
+                border-radius: var(--radius-m); margin-bottom: 8px;
+                cursor: pointer; transition: background 0.2s;
+                border: 1px solid transparent;
+            }
+            .nav-item:hover { background: var(--color-surface-var); }
+            .nav-item.active {
+                background: var(--color-container);
+                color: var(--color-on-container);
+                border: 1px solid var(--color-primary);
+            }
+            .nav-day-num { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; }
+            .nav-date { font-family: var(--font-brand); font-size: 18px; font-weight: bold; margin: 4px 0; }
+            .nav-desc { font-size: 14px; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            
+            .content-inner { grid-template-columns: 200px 1fr; }
+            .activity-img { height: 100%; }
+        }
+
+        .day-group.past-day { opacity: 0.6; }
+
+    </style>
+</head>
+<body>
+
+    <div id="snowContainer" class="snow-container"></div>
+
+    <header>
+        <div>
+            <h1>Agenda de Viaje</h1>
+            <div style="font-size:14px; color:var(--color-outline);">Navidad 2025</div>
+        </div>
+        <div class="controls">
+            <button class="icon-btn" onclick="toggleMode()" title="Modo Claro/Oscuro" aria-label="Cambiar modo de color">
+                <span class="material-symbols-rounded" id="modeIcon">dark_mode</span>
+            </button>
+            <button class="icon-btn" onclick="cycleTheme()" title="Cambiar Tema" aria-label="Cambiar paleta de colores">
+                <span class="material-symbols-rounded">palette</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        
+        <nav class="sidebar" id="sidebarNav"></nav>
+
+        <main class="feed" id="feedContainer"></main>
+
+    </div>
+
+    <script>
+        // --- HARDCODED DATA FROM CSV ---
+        const itineraryData = [
+    {
+        "date": "2025-12-24",
+        "dayNumber": 1,
+        "shortName": "Ávila",
+        "description": "Feliz Navidad!",
+        "events": [
+            {
+                "time": "13:00",
+                "title": "Check-in Airbnb",
+                "desc": "Llegada a la finca ",
+                "icon": "hotel",
+                "tags": [
+                    "hotel"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Check-in%20Airbnb%20%C3%81vila%20Llegada%20a%20la%20finca%20?width=600&height=400&nologo=true",
+                "loc": "Calle Cañada Real 00, Ávila, Castilla y León 05429, Spain",
+                "mapLink": "https://www.google.com/maps/place/C.+Ca%C3%B1ada+Real,+0,+05429+Navahondilla,+%C3%81vila/@40.3220452,-4.4939302,17z/data=!3m1!4b1!4m5!3m4!1s0xd404ebd22a384e7:0xd799049b17ff3647!8m2!3d40.3220411!4d-4.4913553?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "https://www.airbnb.com/l/cW4zy9EO"
+            },
+            {
+                "time": "20:00",
+                "title": "Cena de Navidad",
+                "desc": "Cena Navideña al estilo español",
+                "icon": "outdoor_grill",
+                "tags": [
+                    "outdoor_grill"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Cena%20de%20Navidad%20%C3%81vila%20Cena%20Navide%C3%B1a%20al%20estilo%20espa%C3%B1ol?width=600&height=400&nologo=true",
+                "loc": "Calle Cañada Real 00, Ávila, Castilla y León 05429, Spain",
+                "mapLink": "https://www.google.com/maps/place/C.+Ca%C3%B1ada+Real,+0,+05429+Navahondilla,+%C3%81vila/@40.3220452,-4.4939302,17z/data=!3m1!4b1!4m5!3m4!1s0xd404ebd22a384e7:0xd799049b17ff3647!8m2!3d40.3220411!4d-4.4913553?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "https://www.airbnb.com/l/cW4zy9EO"
+            },
+            {
+                "time": "11:30",
+                "title": "Entrega de regalos",
+                "desc": "Descubre a tu secret Santa",
+                "icon": "featured_seasonal_and_gifts",
+                "tags": [
+                    "featured_seasonal_and_gifts"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Entrega%20de%20regalos%20%C3%81vila%20Descubre%20a%20tu%20secret%20Santa?width=600&height=400&nologo=true",
+                "loc": "Calle Cañada Real 00, Ávila, Castilla y León 05429, Spain",
+                "mapLink": "https://www.google.com/maps/place/C.+Ca%C3%B1ada+Real,+0,+05429+Navahondilla,+%C3%81vila/@40.3220452,-4.4939302,17z/data=!3m1!4b1!4m5!3m4!1s0xd404ebd22a384e7:0xd799049b17ff3647!8m2!3d40.3220411!4d-4.4913553?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "https://www.airbnb.com/l/cW4zy9EO"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-25",
+        "dayNumber": 2,
+        "shortName": "Ávila",
+        "description": "Asado navideño",
+        "events": [
+            {
+                "time": "14:00",
+                "title": "Asadito post Navidad",
+                "desc": "Día familiar de asadito",
+                "icon": "outdoor_grill",
+                "tags": [
+                    "outdoor_grill"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Asadito%20post%20Navidad%20%C3%81vila%20D%C3%ADa%20familiar%20de%20asadito?width=600&height=400&nologo=true",
+                "loc": "Calle Cañada Real 00, Ávila, Castilla y León 05429, Spain",
+                "mapLink": "https://www.google.com/maps/place/C.+Ca%C3%B1ada+Real,+0,+05429+Navahondilla,+%C3%81vila/@40.3220452,-4.4939302,17z/data=!3m1!4b1!4m5!3m4!1s0xd404ebd22a384e7:0xd799049b17ff3647!8m2!3d40.3220411!4d-4.4913553?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "https://www.airbnb.com/l/cW4zy9EO"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-26",
+        "dayNumber": 3,
+        "shortName": "Día libre",
+        "description": "Día libre",
+        "events": [
+            {
+                "time": "Todo el día",
+                "title": "Día libre",
+                "desc": "Día libre",
+                "icon": "self_improvement",
+                "tags": [
+                    "self_improvement"
+                ],
+                "img": "https://image.pollinations.ai/prompt/D%C3%ADa%20libre%20D%C3%ADa%20libre%20D%C3%ADa%20libre%20D%C3%ADa%20libre?width=600&height=400&nologo=true",
+                "loc": "Día libre",
+                "mapLink": "Día libre",
+                "link": "Día libre"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-27",
+        "dayNumber": 4,
+        "shortName": "Granada",
+        "description": "El centro de Graná",
+        "events": [
+            {
+                "time": "13:00",
+                "title": "Check-in Airbnb",
+                "desc": "Llegada y descarga de maletas",
+                "icon": "hotel",
+                "tags": [
+                    "hotel"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Check-in%20Airbnb%20Granada%20Llegada%20y%20descarga%20de%20maletas?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            },
+            {
+                "time": "16:30",
+                "title": "Free walking tour",
+                "desc": "Encuentro en Bib-Rambla junto a la fuente de los gigantes. Recorrido por el centro histórico de Granada",
+                "icon": "directions_walk",
+                "tags": [
+                    "directions_walk"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Free%20walking%20tour%20Granada%20Encuentro%20en%20Bib-Rambla%20junto%20a%20la%20fuente%20de%20los%20gigantes.%20Recorrido%20por%20e?width=600&height=400&nologo=true",
+                "loc": "Pl. de Bib-Rambla, Centro, 18001 Granada",
+                "mapLink": "https://www.google.com/maps/place/Fuente+de+los+Gigantones/@37.1751747,-3.6023693,17z/data=!3m1!4b1!4m6!3m5!1s0xd71fcbe4f1a6951:0x6ea54509467dbbf8!8m2!3d37.1751705!4d-3.5997944!16s%2Fg%2F11c2pwj8v8?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "19:30",
+                "title": "Cena Los Manueles",
+                "desc": "El restaurante Los Manueles es muy tradicional y de tapeo local",
+                "icon": "restaurant",
+                "tags": [
+                    "restaurant"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Cena%20Los%20Manueles%20Granada%20El%20restaurante%20Los%20Manueles%20es%20muy%20tradicional%20y%20de%20tapeo%20local?width=600&height=400&nologo=true",
+                "loc": "Reyes Católicos, 61, Centro, 18010 Granada",
+                "mapLink": "https://www.google.com/maps/place/Restaurante+Los+Manueles+-+Reyes+Cat%C3%B3licos/@37.1763567,-3.5994506,17z/data=!3m1!4b1!4m6!3m5!1s0xd71fcbef38b3cf9:0xe00c1ca72a8d0c1b!8m2!3d37.1763525!4d-3.5968757!16s%2Fg%2F1ptxn_0n5?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-28",
+        "dayNumber": 5,
+        "shortName": "Granada",
+        "description": "Un poco de historia Nazarí",
+        "events": [
+            {
+                "time": "11:00",
+                "title": "Visita a La Alhambra de Granada",
+                "desc": "Visita de 2 horas en La Alhambra",
+                "icon": "mosque",
+                "tags": [
+                    "mosque"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Visita%20a%20La%20Alhambra%20de%20Granada%20Granada%20Visita%20de%202%20horas%20en%20La%20Alhambra?width=600&height=400&nologo=true",
+                "loc": "C. Real de la Alhambra, s/n, Centro, 18009 Granada, España",
+                "mapLink": "https://www.google.com/maps/place/Patronato+de+la+Alhambra+y+el+Generalife/@37.1759296,-3.5901327,16z/data=!3m1!4b1!4m6!3m5!1s0xd71fcb73b5b0625:0xa8f546974d9ddf8a!8m2!3d37.1759254!4d-3.5875578!16s%2Fg%2F12377c2s?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "13:00",
+                "title": "Entrada a Palacios Nazaries",
+                "desc": "Recorrido de 1 hora",
+                "icon": "castle",
+                "tags": [
+                    "castle"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Entrada%20a%20Palacios%20Nazaries%20Granada%20Recorrido%20de%201%20hora?width=600&height=400&nologo=true",
+                "loc": "C. Real de la Alhambra, s/n, Centro, 18009 Granada",
+                "mapLink": "https://www.google.com/maps/place/Nasrid+Palaces/@37.1759296,-3.5901327,16z/data=!4m14!1m7!3m6!1s0xd71fcb73b5b0625:0xa8f546974d9ddf8a!2sPatronato+de+la+Alhambra+y+el+Generalife!8m2!3d37.1759254!4d-3.5875578!16s%2Fg%2F12377c2s!3m5!1s0xd71fcb7b8c4e5db:0x3ca0af4870edba04!8m2!3d37.1774137!4d-3.5896794!16s%2Fg%2F122y5r1f?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "15:30",
+                "title": "Bar hopping de tapas",
+                "desc": "Almuerzo a lo español de comer tapas en varios bares",
+                "icon": "tapas",
+                "tags": [
+                    "tapas"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Bar%20hopping%20de%20tapas%20Granada%20Almuerzo%20a%20lo%20espa%C3%B1ol%20de%20comer%20tapas%20en%20varios%20bares?width=600&height=400&nologo=true",
+                "loc": "Albaicín",
+                "mapLink": "https://www.google.com/maps/place/Albaic%C3%ADn,+Granada/@37.1873646,-3.5984411,15z/data=!3m1!4b1!4m6!3m5!1s0xd71fcce5a5dab75:0x68f582233f061518!8m2!3d37.1854794!4d-3.5901282!16zL20vMGdseDAy?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "17:00",
+                "title": "Mirador de San Nicolas",
+                "desc": "Recorrer los barrios y miradores",
+                "icon": "tour",
+                "tags": [
+                    "tour"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Mirador%20de%20San%20Nicolas%20Granada%20Recorrer%20los%20barrios%20y%20miradores?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            },
+            {
+                "time": "20:00",
+                "title": "Cena Carmen El Agua",
+                "desc": "Cena fancy",
+                "icon": "hand_meal",
+                "tags": [
+                    "hand_meal"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Cena%20Carmen%20El%20Agua%20Granada%20Cena%20fancy?width=600&height=400&nologo=true",
+                "loc": "Pcta. del Aljibe de Trillo, 7, Albaicín, 18010 Granada",
+                "mapLink": "https://www.google.com/maps/place/Restaurante+Carmen+El+Agua/@37.1799848,-3.5955888,17z/data=!3m1!4b1!4m6!3m5!1s0xd71fcc7966b5417:0x72b2f17255e35925!8m2!3d37.1799806!4d-3.5930139!16s%2Fg%2F1thgjct0?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-29",
+        "dayNumber": 6,
+        "shortName": "Sierra Nevada",
+        "description": "Conociendo la nieve",
+        "events": [
+            {
+                "time": "10:00",
+                "title": "Entrada a Estacion Sierra Nevada",
+                "desc": "Recoger equipos y organizar subida a la montaña",
+                "icon": "gondola_lift",
+                "tags": [
+                    "gondola_lift"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Entrada%20a%20Estacion%20Sierra%20Nevada%20Sierra%20Nevada%20Recoger%20equipos%20y%20organizar%20subida%20a%20la%20monta%C3%B1a?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "11:00",
+                "title": "Clases de Ski",
+                "desc": "Clase de 3 horas y botar talento sobre la nieve",
+                "icon": "downhill_skiing",
+                "tags": [
+                    "downhill_skiing"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Clases%20de%20Ski%20Sierra%20Nevada%20Clase%20de%203%20horas%20y%20botar%20talento%20sobre%20la%20nieve?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "14:00",
+                "title": "Almuerzo tipo picnic",
+                "desc": "Descansito para comer y reponer energías para seguir esquiando. Recomendación: Llevar sanduchitos para comer",
+                "icon": "takeout_dining_2",
+                "tags": [
+                    "takeout_dining_2"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Almuerzo%20tipo%20picnic%20Sierra%20Nevada%20Descansito%20para%20comer%20y%20reponer%20energ%C3%ADas%20para%20seguir%20esquiando.%20R?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "15:00",
+                "title": "Practica libre de ski",
+                "desc": "Practica libre de ski",
+                "icon": "downhill_skiing",
+                "tags": [
+                    "downhill_skiing"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Practica%20libre%20de%20ski%20Sierra%20Nevada%20Practica%20libre%20de%20ski?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "17:00",
+                "title": "Salida al airbnb",
+                "desc": "Bajada de la montaña y chill",
+                "icon": "airport_shuttle",
+                "tags": [
+                    "airport_shuttle"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Salida%20al%20airbnb%20Sierra%20Nevada%20Bajada%20de%20la%20monta%C3%B1a%20y%20chill?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "21:00",
+                "title": "Cena El Sintapujos / Perromedio",
+                "desc": "Pendiente definir cual de los 2",
+                "icon": "hand_meal",
+                "tags": [
+                    "hand_meal"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Cena%20El%20Sintapujos%20/%20Perromedio%20Sierra%20Nevada%20Pendiente%20definir%20cual%20de%20los%202?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-30",
+        "dayNumber": 7,
+        "shortName": "Sierra Nevada",
+        "description": "Chilling en la niveve",
+        "events": [
+            {
+                "time": "10:00",
+                "title": "Entrada a Estacion Sierra Nevada",
+                "desc": "Vamos de nuevo a la montaña con nieve!",
+                "icon": "gondola_lift",
+                "tags": [
+                    "gondola_lift"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Entrada%20a%20Estacion%20Sierra%20Nevada%20Sierra%20Nevada%20Vamos%20de%20nuevo%20a%20la%20monta%C3%B1a%20con%20nieve%21?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "11:00",
+                "title": "Tiempo libre en la nieve",
+                "desc": "Actividades en la nieve/ Clase de 3 horas para esquiadores",
+                "icon": "ac_unit",
+                "tags": [
+                    "ac_unit"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Tiempo%20libre%20en%20la%20nieve%20Sierra%20Nevada%20Actividades%20en%20la%20nieve/%20Clase%20de%203%20horas%20para%20esquiadores?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "14:00",
+                "title": "Almuerzo en la montaña",
+                "desc": "Restaurante en el parque",
+                "icon": "takeout_dining_2",
+                "tags": [
+                    "takeout_dining_2"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Almuerzo%20en%20la%20monta%C3%B1a%20Sierra%20Nevada%20Restaurante%20en%20el%20parque?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "16:00",
+                "title": "Salida al airbnb",
+                "desc": "Bajada de la montaña. Hasta la próxima temporada de nieve.",
+                "icon": "airport_shuttle",
+                "tags": [
+                    "airport_shuttle"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Salida%20al%20airbnb%20Sierra%20Nevada%20Bajada%20de%20la%20monta%C3%B1a.%20Hasta%20la%20pr%C3%B3xima%20temporada%20de%20nieve.?width=600&height=400&nologo=true",
+                "loc": "Pl. Pradollano, 18196 Sierra Nevada, Granada",
+                "mapLink": "https://www.google.com/maps/place/Escuela+Oficial+de+Esqui/@37.0936823,-3.3997536,17.74z/data=!4m6!3m5!1s0xd71dd800a075433:0x6e28d81de1f9f9c3!8m2!3d37.0938803!4d-3.399074!16s%2Fg%2F11scgpldly?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "18:30",
+                "title": "Tablao Flamenco",
+                "desc": "Show de flamenco en una cueva",
+                "icon": "nightlife",
+                "tags": [
+                    "nightlife"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Tablao%20Flamenco%20Sierra%20Nevada%20Show%20de%20flamenco%20en%20una%20cueva?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            },
+            {
+                "time": "21:00",
+                "title": "Cena en Palacio Andaluz Almona",
+                "desc": "Restaurante marroqui",
+                "icon": "hand_meal",
+                "tags": [
+                    "hand_meal"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Cena%20en%20Palacio%20Andaluz%20Almona%20Sierra%20Nevada%20Restaurante%20marroqui?width=600&height=400&nologo=true",
+                "loc": "C. San Jerónimo, 5, Centro, 18001 Granada",
+                "mapLink": "https://www.google.com/maps/place/Restaurante+Palacio+Andaluz+Almona/@37.1769695,-3.6024488,17z/data=!3m1!4b1!4m6!3m5!1s0xd71fcc68a82994f:0x64b6770a2cf7cba6!8m2!3d37.1769653!4d-3.5998739!16s%2Fg%2F11c5fyz5lk?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-31",
+        "dayNumber": 8,
+        "shortName": "Granada",
+        "description": "Yo no olvido el año viejo",
+        "events": [
+            {
+                "time": "14:00",
+                "title": "Almuerzo en BONGO",
+                "desc": "Almuerzo comida española fusión",
+                "icon": "restaurant",
+                "tags": [
+                    "restaurant"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Almuerzo%20en%20BONGO%20Granada%20Almuerzo%20comida%20espa%C3%B1ola%20fusi%C3%B3n?width=600&height=400&nologo=true",
+                "loc": "Pl. Isabel la Católica, 2, Centro, 18009 Granada",
+                "mapLink": "https://www.google.com/maps/place/Bongo/@37.1757034,-3.5993803,17z/data=!3m1!4b1!4m6!3m5!1s0xd71fd31f13ba1ff:0x8f0950490b538954!8m2!3d37.1756992!4d-3.5968054!16s%2Fg%2F11pdgc_jqg?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D",
+                "link": "Link"
+            },
+            {
+                "time": "20:00",
+                "title": "Cena de fin de año",
+                "desc": "Cena familiar y brindis",
+                "icon": "brunch_dining",
+                "tags": [
+                    "brunch_dining"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Cena%20de%20fin%20de%20a%C3%B1o%20Granada%20Cena%20familiar%20y%20brindis?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            },
+            {
+                "time": "22:00",
+                "title": "Fiesta de Fin de Año",
+                "desc": "DJ Law in the house. Telonero DJ Darby",
+                "icon": "celebration",
+                "tags": [
+                    "celebration"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Fiesta%20de%20Fin%20de%20A%C3%B1o%20Granada%20DJ%20Law%20in%20the%20house.%20Telonero%20DJ%20Darby?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            }
+        ]
+    },
+    {
+        "date": "2026-01-01",
+        "dayNumber": 9,
+        "shortName": "Granada",
+        "description": "Asadito de año nuevo",
+        "events": [
+            {
+                "time": "14:00",
+                "title": "Asado de desenguayabe",
+                "desc": "Asado de bienvenida del año como siempre",
+                "icon": "outdoor_grill",
+                "tags": [
+                    "outdoor_grill"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Asado%20de%20desenguayabe%20Granada%20Asado%20de%20bienvenida%20del%20a%C3%B1o%20como%20siempre?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            },
+            {
+                "time": "11:00",
+                "title": "Check-out Airbnb",
+                "desc": "Regreso a casa",
+                "icon": "airport_shuttle",
+                "tags": [
+                    "airport_shuttle"
+                ],
+                "img": "https://image.pollinations.ai/prompt/Check-out%20Airbnb%20Granada%20Regreso%20a%20casa?width=600&height=400&nologo=true",
+                "loc": "Pdte",
+                "mapLink": "Pdte",
+                "link": "Link"
+            }
+        ]
+    }
+];
+
+        // --- APP STATE ---
+        const themes = ['earthy', 'mystical', 'classic'];
+        let currentThemeIdx = 0;
+        let isDarkMode = false;
+        
+        // DOM Elements
+        const sidebarNav = document.getElementById('sidebarNav');
+        const feedContainer = document.getElementById('feedContainer');
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            renderItinerary();
+            setupSnow();
+            // Scroll to 24th or first item after slight delay
+            setTimeout(scrollToCurrentDay, 600);
+        });
+
+        // Rendering Logic
+        function renderItinerary() {
+            sidebarNav.innerHTML = '';
+            feedContainer.innerHTML = '';
+
+            // Simulate "Today" as Dec 24 for the experience, 
+            // since this is a future trip planner.
+            const SIMULATED_TODAY = new Date('2025-12-24T00:00:00');
+            
+            itineraryData.forEach((day, index) => {
+                const dateObj = new Date(day.date);
+                
+                // Compare logic
+                const isToday = dateObj.toDateString() === SIMULATED_TODAY.toDateString();
+                const isPast = dateObj < SIMULATED_TODAY;
+                
+                // Spanish Date Formatting
+                // Note: toLocaleDateString might depend on browser locale, 
+                // so we force 'es-ES' and handle capitalisation manually if needed.
+                const dateOptions = { month: 'short', day: 'numeric' };
+                let dateStr = dateObj.toLocaleDateString('es-ES', dateOptions);
+                
+                // --- SIDEBAR ITEM ---
+                const navItem = document.createElement('div');
+                navItem.className = `nav-item ${isToday ? 'active' : ''}`;
+                navItem.onclick = () => scrollToDay(`day-${index}`);
+                navItem.innerHTML = `
+                    <div class="nav-day-num">Día ${day.dayNumber}</div>
+                    <div class="nav-date">${dateStr}</div>
+                    <div class="nav-desc">${day.shortName}</div>
+                `;
+                sidebarNav.appendChild(navItem);
+
+                // --- FEED GROUP ---
+                const groupDiv = document.createElement('div');
+                groupDiv.className = `day-group ${isPast ? 'past-day' : ''}`;
+                groupDiv.id = `day-${index}`;
+                
+                groupDiv.innerHTML = `
+                    <div class="day-group-header">
+                        <div>
+                            <h2>${dateStr}</h2>
+                            <span class="subtitle">Día ${day.dayNumber} &middot; ${day.shortName}</span>
+                        </div>
+                        ${isToday ? '<div class="badge-today">Hoy</div>' : ''}
+                    </div>
+                `;
+
+                // --- ACTIVITIES ---
+                if (day.events && day.events.length > 0) {
+                    day.events.forEach(evt => {
+                        const card = document.createElement('div');
+                        card.className = 'activity-card';
+                        
+                        // Tags
+                        const tagsHtml = evt.tags.map(tag => `<span class="chip">#${tag}</span>`).join('');
+                        
+                        card.innerHTML = `
+                            <div class="card-header" onclick="toggleCard(this)">
+                                <div class="time-slot">${evt.time}</div>
+                                <div class="card-icon">
+                                    <span class="material-symbols-rounded">${evt.icon}</span>
+                                </div>
+                                <div class="card-title">${evt.title}</div>
+                                <span class="material-symbols-rounded expand-icon">expand_more</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="content-inner">
+                                    <img src="${evt.img}" alt="${evt.title}" class="activity-img" loading="lazy">
+                                    <div class="activity-details">
+                                        <p class="activity-desc">${evt.desc}</p>
+                                        <div class="chips">${tagsHtml}</div>
+                                        <a href="${evt.mapLink}" target="_blank" class="location-row">
+                                            <span class="material-symbols-rounded" style="font-size:18px">location_on</span>
+                                            ${evt.loc}
+                                        </a>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary" onclick="window.open('${evt.link}', '_blank')">
+                                                Visitar Web
+                                            </button>
+                                            <button class="btn btn-secondary" onclick="alert('Funcionalidad de calendario pendiente')">
+                                                <span class="material-symbols-rounded" style="font-size:18px">calendar_month</span>
+                                                Calendario
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        groupDiv.appendChild(card);
+                    });
+                }
+                
+                feedContainer.appendChild(groupDiv);
+            });
+        }
+
+        // --- INTERACTIVITY ---
+        function toggleCard(header) {
+            const card = header.parentElement;
+            const content = card.querySelector('.card-content');
+            
+            if (card.classList.contains('open')) {
+                card.classList.remove('open');
+                content.style.maxHeight = null;
+            } else {
+                card.classList.add('open');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+
+        function scrollToDay(id) {
+            const el = document.getElementById(id);
+            if(!el) return;
+            const y = el.getBoundingClientRect().top + window.scrollY - 100;
+            window.scrollTo({top: y, behavior: 'smooth'});
+            
+            // Sync Sidebar
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            const index = parseInt(id.split('-')[1]);
+            const navItems = document.querySelectorAll('.nav-item');
+            if(navItems[index]) navItems[index].classList.add('active');
+        }
+
+        function scrollToCurrentDay() {
+            const activeNav = document.querySelector('.nav-item.active');
+            if (activeNav) activeNav.click(); 
+        }
+
+        function toggleMode() {
+            isDarkMode = !isDarkMode;
+            document.documentElement.setAttribute('data-mode', isDarkMode ? 'dark' : 'light');
+            document.getElementById('modeIcon').innerText = isDarkMode ? 'light_mode' : 'dark_mode';
+        }
+
+        function cycleTheme() {
+            currentThemeIdx = (currentThemeIdx + 1) % themes.length;
+            document.documentElement.setAttribute('data-theme', themes[currentThemeIdx]);
+        }
+
+        function setupSnow() {
+            const container = document.getElementById('snowContainer');
+            if(!container) return;
+            for(let i=0; i<30; i++) {
+                const div = document.createElement('div');
+                div.className = 'snowflake';
+                div.innerText = '❄';
+                div.style.left = Math.random() * 100 + '%';
+                div.style.fontSize = (Math.random() * 10 + 10) + 'px';
+                div.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                div.style.animationDelay = (Math.random() * 5) + 's';
+                container.appendChild(div);
+            }
+        }
+
+    </script>
+</body>
+</html>
