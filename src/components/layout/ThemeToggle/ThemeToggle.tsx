@@ -19,7 +19,7 @@ export function ThemeToggle(): JSX.Element {
       >
         <Icon
           name={mode === 'light' ? 'dark_mode' : 'light_mode'}
-          aria-hidden="true"
+          aria-hidden={true}
         />
       </button>
       <button
@@ -28,7 +28,7 @@ export function ThemeToggle(): JSX.Element {
         aria-label="Cycle theme"
         type="button"
       >
-        <Icon name="palette" aria-hidden="true" />
+        <Icon name="palette" aria-hidden={true} />
       </button>
     </div>
   );

@@ -6,14 +6,12 @@ import { cn } from '@/lib/utils';
 
 interface DayNavItemProps {
   days: Day[];
-  indices: number[];
   isActive: boolean;
   onClick: () => void;
 }
 
 export function DayNavItem({
   days,
-  indices,
   isActive,
   onClick,
 }: DayNavItemProps): JSX.Element {

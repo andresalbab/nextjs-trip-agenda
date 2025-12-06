@@ -9,7 +9,7 @@ export default function NotFound(): JSX.Element {
       <h1 className={styles.title}>404</h1>
       <p className={styles.message}>Página no encontrada</p>
       <Link href="/" className={styles.link}>
-        <Icon name="home" size={20} aria-hidden="true" />
+        <Icon name="home" size={20} aria-hidden={true} />
         Volver al inicio
       </Link>
     </div>

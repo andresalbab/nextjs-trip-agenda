@@ -32,7 +32,7 @@ export default async function DayPage({
   return (
     <div className={styles.container}>
       <Link href={backHref} className={styles.backLink}>
-        <Icon name="arrow_back" size={20} aria-hidden="true" />
+        <Icon name="arrow_back" size={20} aria-hidden={true} />
         Volver al itinerario completo
       </Link>
       <DaySection day={day} status={status} />

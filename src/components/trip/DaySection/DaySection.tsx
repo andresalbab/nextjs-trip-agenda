@@ -9,15 +9,11 @@ import { cn } from '@/lib/utils';
 interface DaySectionProps {
   day: Day;
   status: DayStatus;
-  isCollapsed?: boolean;
-  onToggle?: () => void;
 }
 
 export function DaySection({
   day,
   status,
-  isCollapsed = false,
-  onToggle,
 }: DaySectionProps): JSX.Element {
   const dateStr = formatDate(day.date);
   const today = isToday(day.date);

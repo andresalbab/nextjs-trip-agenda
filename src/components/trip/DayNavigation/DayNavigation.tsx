@@ -83,7 +83,6 @@ export function DayNavigation({
         <DayNavItem
           key={`${group.name}-${index}`}
           days={group.days}
-          indices={group.indices}
           isActive={activeGroupIndex === index}
           onClick={() => handleClick(index)}
         />

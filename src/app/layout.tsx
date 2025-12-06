@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { HeaderWrapper } from '@/components/layout/Header/HeaderWrapper';
 import { SnowflakeBackground } from '@/components/shared/SnowflakeBackground/SnowflakeBackground';
+import { ThemeName } from '@/lib/types';
 import './globals.css';
 import tripData from '@/data/trip-data.json';
 
@@ -50,7 +51,7 @@ export default function RootLayout({
       <body>
         <SnowflakeBackground />
         <ThemeProvider
-          defaultTheme={tripData.metadata.theme}
+          defaultTheme={tripData.metadata.theme as ThemeName}
           defaultMode="light"
         >
           <HeaderWrapper />

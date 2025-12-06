@@ -44,7 +44,6 @@ export function ActivityCard({
     }
   }, [expanded]);
 
-  const mapLink = activity.links?.find((link) => link.type === 'map');
   const websiteLink = activity.links?.find((link) => link.type === 'website');
 
   // Normalize location to an array format
@@ -81,13 +80,13 @@ export function ActivityCard({
       >
         <div className={styles.timeSlot}>{activity.time}</div>
         <div className={styles.cardIcon}>
-          <Icon name={activity.icon} aria-hidden="true" />
+          <Icon name={activity.icon} aria-hidden={true} />
         </div>
         <div className={styles.cardTitle}>{activity.title}</div>
         <Icon
           name="expand_more"
           className={cn(styles.expandIcon)}
-          aria-hidden="true"
+          aria-hidden={true}
         />
       </button>
       <div className={styles.cardContent} ref={contentRef}>
@@ -115,12 +114,12 @@ export function ActivityCard({
                       rel="noopener noreferrer"
                       className={styles.locationRow}
                     >
-                      <Icon name="location_on" size={18} aria-hidden="true" />
+                      <Icon name="location_on" size={18} aria-hidden={true} />
                       {loc.label}
                     </a>
                   ) : (
                     <div key={index} className={styles.locationRow}>
-                      <Icon name="location_on" size={18} aria-hidden="true" />
+                      <Icon name="location_on" size={18} aria-hidden={true} />
                       {loc.label}
                     </div>
                   )
@@ -140,7 +139,7 @@ export function ActivityCard({
                 variant="secondary"
                 onClick={() => window.open(calendarUrl, '_blank')}
               >
-                <Icon name="calendar_month" size={18} aria-hidden="true" />
+                <Icon name="calendar_month" size={18} aria-hidden={true} />
                 Calendario
               </Button>
             </div>
