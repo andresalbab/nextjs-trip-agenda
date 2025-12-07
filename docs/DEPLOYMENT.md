@@ -15,9 +15,10 @@
    - Connect your Git repository
 
 2. **Configure Build Settings**
-   - Build command: `npm run build`
+   - Build command: `npm run build` (automatically runs `type-check` first via `prebuild` hook)
    - Publish directory: `.next`
    - Node version: 20
+   - **Note**: The build will fail fast on TypeScript errors, preventing deployment of broken code
 
 3. **Environment Variables**
    - Go to Site settings → Environment variables
@@ -85,6 +86,10 @@ Consider adding Sentry or similar error tracking service.
 - Check for TypeScript errors: `npm run type-check`
 - Verify all trip data JSON files are valid JSON
 - Ensure all routes have corresponding page files
+- **Important**: The build process now runs type checking before building (`prebuild` script)
+  - This catches TypeScript errors early, including in unused files
+  - Always run `npm run type-check` locally before pushing
+  - Remove unused component files to avoid build failures
 
 ### Runtime Errors
 
