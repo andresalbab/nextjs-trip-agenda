@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    // Remote patterns kept for backward compatibility if needed
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,8 +14,16 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
+    // Optimize image formats for better performance
     formats: ['image/avif', 'image/webp'],
+    // Device sizes for responsive images
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    // Image sizes for different breakpoints
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Enable image optimization for local images
+    minimumCacheTTL: 60,
+    // Disable static image import optimization warnings
+    dangerouslyAllowSVG: false,
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',

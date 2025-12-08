@@ -21,6 +21,7 @@ export function ActivityCard({
   onToggle,
 }: ActivityCardProps): JSX.Element {
   const [internalExpanded, setInternalExpanded] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const isControlled = controlledExpanded !== undefined;
 
@@ -43,6 +44,11 @@ export function ActivityCard({
       }
     }
   }, [expanded]);
+
+  // Reset image error state when activity changes
+  useEffect(() => {
+    setImageError(false);
+  }, [activity.id]);
 
   const websiteLink = activity.links?.find((link) => link.type === 'website');
 
@@ -69,6 +75,9 @@ export function ActivityCard({
     firstLocationLabel
   );
 
+  // Determine image source: use placeholder if image failed to load
+  const imageSrc = imageError ? '/images/activities/placeholder.webp' : activity.image.url;
+
   return (
     <div className={cn(styles.card, expanded && styles.open)}>
       <button
@@ -93,12 +102,22 @@ export function ActivityCard({
         <div className={styles.contentInner}>
           <div className={styles.imageWrapper}>
             <Image
-              src={activity.image.url}
+              key={imageSrc}
+              src={imageSrc}
               alt={activity.image.alt}
               width={600}
               height={400}
               className={styles.activityImg}
               loading="lazy"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              quality={85}
+              onError={() => {
+                if (!imageError) {
+                  setImageError(true);
+                }
+              }}
             />
           </div>
           <div className={styles.activityDetails}>

@@ -24,7 +24,7 @@
           "location": "Por determinar",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/17b01b1e-a1a7-4fc4-948e-839cbef05d8b.webp",
             "alt": "Salida de Murcia en Valencia"
           },
           "links": []
@@ -38,7 +38,7 @@
           "location": "Por determinar",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/e7ce2434-ef76-4690-94d7-b4dca563447d.webp",
             "alt": "Almuerzo de camino a Valencia en Valencia"
           },
           "links": []
@@ -52,7 +52,7 @@
           "location": "Carrer de Mossèn Planelles, 2, Valencia, Comunidad Valenciana 46011, Spain",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/d192b4d2-7405-44b9-8122-59c0522259e0.webp",
             "alt": "Check-in Airbnb en Valencia"
           },
           "links": [
@@ -79,7 +79,7 @@
           "location": "Plaça de la Porta de la Mar, sn, Ciutat Vella, 46003 València, Valencia",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/00ad4c65-2eaf-4fae-83c4-0976ec2acdaa.webp",
             "alt": "Port de La Mar en Valencia"
           },
           "links": [
@@ -100,7 +100,7 @@
           "location": "Puente de las Flores- Alcaldesa Rita Barberá, El Llano del Real, 46010 Valencia",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/4745e6d4-c67f-4a76-b354-036835f2f5b4.webp",
             "alt": "Pont de les Flors en Valencia"
           },
           "links": [
@@ -121,7 +121,7 @@
           "location": "Quatre Carreres, 46013 Valencia",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1594623930572-300a3011d9ae?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/2608281b-68cb-4d59-a514-99e7c0130712.webp",
             "alt": "Ciudad de las Artes y las Ciencias en Valencia"
           },
           "links": [
@@ -142,7 +142,7 @@
           "location": "Av. de França, 11, Camins al Grau, 46023 Barceló, Valencia",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1590005176489-db2e714711fc?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/e55377f9-5736-468f-a6f8-16f66f14c0c9.webp",
             "alt": "Tardeo en rooftop en Valencia"
           },
           "links": [
@@ -163,7 +163,7 @@
           "location": "Carrer del Moll de la Duana, s/n, Poblats Marítims, 46024 València, Valencia",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/ff1ccd86-d227-41fb-9630-791efebaddbc.webp",
             "alt": "Marina de Valencia en Valencia"
           },
           "links": [
@@ -184,7 +184,7 @@
           "location": "Por determinar",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/f8de6f01-ecf3-465b-9dcc-3f28a67d5669.webp",
             "alt": "Cena en Valencia"
           },
           "links": []
@@ -198,7 +198,7 @@
           "location": "Carrer de Mossèn Planelles, 2, Valencia, Comunidad Valenciana 46011, Spain",
           "date": "2025-12-21",
           "image": {
-            "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/6c13122f-a0c8-44e6-acac-72506d872e6d.webp",
             "alt": "Regreso a casa en Valencia"
           },
           "links": [
@@ -234,7 +234,7 @@
           "location": "C/ del Comte d'Almodóvar, 1, Bajo Izq, Ciutat Vella, 46003 Valencia",
           "date": "2025-12-22",
           "image": {
-            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/2ffaee52-333e-483c-81dd-9b247588ac96.webp",
             "alt": "Desayuno en Plaza de la Virgen en Valencia"
           },
           "links": [
@@ -252,10 +252,10 @@
           "title": "Free walking tour",
           "icon": "directions_walk",
           "description": "En la Plaza de la Virgen encuentra el paraguas naranja!",
-          "location": "Plaça de la Verge, 1, 46001 València, Valencia, España",
+          "location": "Plaça de la Verge, 1, 46001 València, Valencia, España",
           "date": "2025-12-22",
           "image": {
-            "url": "https://images.unsplash.com/photo-1600775659382-6d2b3a2e4d1b?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/ce3ae64a-ed61-4eb6-be50-f5afaa2e0d87.webp",
             "alt": "Free walking tour en Valencia"
           },
           "links": [
@@ -282,7 +282,7 @@
           "location": "Por determinar",
           "date": "2025-12-22",
           "image": {
-            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/d4692cd3-e7b0-49e4-91a0-7ed745b17fe7.webp",
             "alt": "Almuerzo  en Valencia"
           },
           "links": []
@@ -296,7 +296,7 @@
           "location": "Poblats Marítims, 46011 Valencia",
           "date": "2025-12-22",
           "image": {
-            "url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/fb73fdd0-ffec-4f9c-94fd-d86fc1adb875.webp",
             "alt": "Passeig Marítim de València (opcional) en Valencia"
           },
           "links": [
@@ -317,7 +317,7 @@
           "location": "Avinguda dels Pinars, 1, Pobles del Sud, 46012 València, Valencia",
           "date": "2025-12-22",
           "image": {
-            "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/1b51c124-2258-404d-8a2e-9504c48999e4.webp",
             "alt": "La Albufera en Valencia"
           },
           "links": [
@@ -338,7 +338,7 @@
           "location": "Por determinar",
           "date": "2025-12-22",
           "image": {
-            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/09230e4a-0412-4ea2-90e0-13598bd8bd61.webp",
             "alt": "Cena en Valencia"
           },
           "links": []
@@ -361,7 +361,7 @@
           "location": "Por determinar",
           "date": "2025-12-23",
           "image": {
-            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/3c080201-f047-4e20-bb59-44ebd964c4e3.webp",
             "alt": "Último desayuno en Valencia en Madrid"
           },
           "links": []
@@ -375,7 +375,7 @@
           "location": "Por determinar",
           "date": "2025-12-23",
           "image": {
-            "url": "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/bc2942fa-8192-4aee-ae1d-fafa2ae40cf6.webp",
             "alt": "Check-out Airbnb en Madrid"
           },
           "links": []
@@ -389,7 +389,7 @@
           "location": "Calle de la Flora, 3, Madrid, Comunidad de Madrid 28013, Spain",
           "date": "2025-12-23",
           "image": {
-            "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/943e53fe-bb77-4794-803e-09cdaec343dd.webp",
             "alt": "Check-in Airbnb en Madrid"
           },
           "links": [
@@ -410,7 +410,7 @@
           "location": "Por determinar",
           "date": "2025-12-23",
           "image": {
-            "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/b983fe10-8c47-4533-9cf3-6970d595a274.webp",
             "alt": "Almuerzo en Madrid"
           },
           "links": []
@@ -424,7 +424,7 @@
           "location": "Por determinar",
           "date": "2025-12-23",
           "image": {
-            "url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/637cf8b9-8abd-4871-9b21-7e3c1ece0bfd.webp",
             "alt": "Tarde libre en Madrid"
           },
           "links": []
@@ -438,7 +438,7 @@
           "location": "Nuevos Ministerios, Tetuán, 28003 Madrid",
           "date": "2025-12-23",
           "image": {
-            "url": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/7d9219be-1c68-4bf1-b4ca-0e6d5338f47b.webp",
             "alt": "Mercadillo de Nuevos Ministerios en Madrid"
           },
           "links": [
@@ -468,7 +468,7 @@
           "location": "Por determinar",
           "date": "2025-12-24",
           "image": {
-            "url": "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=800&h=400&fit=crop",
+            "url": "/images/activities/183efd3e-21b6-40fd-b851-91447c012e50.webp",
             "alt": "Check-out Airbnb en Ávila"
           },
           "links": []

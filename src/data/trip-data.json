@@ -28,7 +28,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Check-in%20Airbnb%20%C3%81vila%20Llegada%20a%20la%20finca%20?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-1-1.webp",
             "alt": "Check-in Airbnb en Ávila"
           },
           "links": [
@@ -59,7 +59,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Cena%20de%20Navidad%20%C3%81vila?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-1-2.webp",
             "alt": "Cena de Navidad en Ávila"
           },
           "links": [
@@ -93,7 +93,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Asado%20Navidad%20Avila?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-2-1.webp",
             "alt": "Asado navideño en Ávila"
           },
           "links": [
@@ -122,7 +122,7 @@
           "description": "Descanso",
           "location": "N/A",
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Relax%20Holiday?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-3-1.webp",
             "alt": "Día de descanso"
           },
           "links": []
@@ -149,7 +149,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Granada%20City?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-4-1.webp",
             "alt": "Check-in en Granada"
           },
           "links": [
@@ -174,7 +174,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Walking%20Tour%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-4-2.webp",
             "alt": "Walking tour en Granada"
           },
           "links": [
@@ -199,7 +199,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Restaurante%20Los%20Manueles%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-4-3.webp",
             "alt": "Cena Los Manueles"
           },
           "links": [
@@ -233,7 +233,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Alhambra%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-5-1.webp",
             "alt": "La Alhambra en Granada"
           },
           "links": [
@@ -246,7 +246,7 @@
           ]
         },
         {
-          "id": "activity-5-1b",
+          "id": "activity-5-2",
           "time": "13:00",
           "title": "Entrada a Palacios Nazaríes",
           "icon": "castle",
@@ -258,7 +258,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Palacios%20Nazar%C3%ADes%20Alhambra?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-5-2.webp",
             "alt": "Palacios Nazaríes"
           },
           "links": [
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "id": "activity-5-2",
+          "id": "activity-5-3",
           "time": "15:30",
           "title": "Bar hopping de tapas",
           "icon": "tapas",
@@ -283,7 +283,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Tapas%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-5-3.webp",
             "alt": "Tapas en Granada"
           },
           "links": [
@@ -296,7 +296,7 @@
           ]
         },
         {
-          "id": "activity-5-3",
+          "id": "activity-5-4",
           "time": "17:00",
           "title": "Mirador de San Nicolás",
           "icon": "tour",
@@ -308,7 +308,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Mirador%20de%20San%20Nicol%C3%A1s%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-5-4.webp",
             "alt": "Mirador de San Nicolás"
           },
           "links": [
@@ -321,7 +321,7 @@
           ]
         },
         {
-          "id": "activity-5-4",
+          "id": "activity-5-5",
           "time": "20:00",
           "title": "Cena Carmen El Agua",
           "icon": "dinner_dining",
@@ -333,7 +333,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Carmen%20El%20Agua%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-5-5.webp",
             "alt": "Cena Carmen El Agua"
           },
           "links": [
@@ -367,7 +367,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Sierra%20Nevada%20Ski?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-6-1.webp",
             "alt": "Estación Sierra Nevada"
           },
           "links": [
@@ -392,7 +392,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Ski%20Lessons%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-6-2.webp",
             "alt": "Clases de Ski"
           },
           "links": [
@@ -417,7 +417,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Picnic%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-6-3.webp",
             "alt": "Almuerzo tipo Picnic"
           },
           "links": [
@@ -442,7 +442,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Ski%20Practice%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-6-4.webp",
             "alt": "Práctica Libre de Ski"
           },
           "links": [
@@ -467,7 +467,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Return%20to%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-6-5.webp",
             "alt": "Salida al Airbnb"
           },
           "links": [
@@ -492,7 +492,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Restaurant%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-6-6.webp",
             "alt": "Cena El Sintapujos / Perromedio"
           },
           "links": [
@@ -526,7 +526,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Sierra%20Nevada%20Ski?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-7-1.webp",
             "alt": "Estación Sierra Nevada"
           },
           "links": [
@@ -551,7 +551,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Snow%20Play%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-7-2.webp",
             "alt": "Tiempo Libre en la Nieve"
           },
           "links": [
@@ -576,7 +576,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Restaurant%20Sierra%20Nevada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-7-3.webp",
             "alt": "Almuerzo en la Montaña"
           },
           "links": [
@@ -601,7 +601,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Return%20to%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-7-4.webp",
             "alt": "Salida al Airbnb"
           },
           "links": [
@@ -626,7 +626,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Tablao%20Flamenco%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-7-5.webp",
             "alt": "Tablao Flamenco"
           },
           "links": [
@@ -651,7 +651,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Moroccan%20Dinner?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-7-6.webp",
             "alt": "Cena en Palacio Andaluz Almona"
           },
           "links": [
@@ -685,7 +685,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Breakfast%20Home?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-8-1.webp",
             "alt": "Desayuno en Casa"
           },
           "links": [
@@ -710,7 +710,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Restaurant%20Bongo%20Granada?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-8-2.webp",
             "alt": "Almuerzo en Bongo"
           },
           "links": [
@@ -735,7 +735,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/New%20Year%20Eve%20Party?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-8-3.webp",
             "alt": "Cena de Fin de Año"
           },
           "links": [
@@ -760,7 +760,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/New%20Year%20Party?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-8-4.webp",
             "alt": "Fiestuqui"
           },
           "links": [
@@ -794,7 +794,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/BBQ%20Friends?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-9-1.webp",
             "alt": "Asado de Desenguayabe"
           },
           "links": [
@@ -828,7 +828,7 @@
             }
           ],
           "image": {
-            "url": "https://image.pollinations.ai/prompt/Check-out%20Airbnb?width=600&height=400&nologo=true",
+            "url": "/images/activities/activity-10-1.webp",
             "alt": "Check-out Airbnb"
           },
           "links": [
