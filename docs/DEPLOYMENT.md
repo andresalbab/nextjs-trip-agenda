@@ -16,7 +16,7 @@
 
 2. **Configure Build Settings**
    - Build command: `npm run build` (automatically runs `type-check` first via `prebuild` hook)
-   - Publish directory: `.next`
+   - **Note**: Do NOT set a publish directory when using `@netlify/plugin-nextjs` - the plugin handles this automatically
    - Node version: 20
    - **Note**: The build will fail fast on TypeScript errors, preventing deployment of broken code
 
