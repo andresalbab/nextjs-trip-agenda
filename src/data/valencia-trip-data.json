@@ -16,43 +16,55 @@
       "description": "La Ciudad de las Artes y las Ciencias",
       "activities": [
         {
-          "id": "17b01b1e-a1a7-4fc4-948e-839cbef05d8b",
+          "id": "va-act-1-1",
           "time": "10:30",
           "title": "Salida de Murcia",
           "icon": "airport_shuttle",
           "description": "Maletas al coche!",
-          "location": "Por determinar",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/17b01b1e-a1a7-4fc4-948e-839cbef05d8b.webp",
+            "url": "/images/activities/va-act-1-1.webp",
             "alt": "Salida de Murcia en Valencia"
           },
           "links": []
         },
         {
-          "id": "e7ce2434-ef76-4690-94d7-b4dca563447d",
+          "id": "va-act-1-2",
           "time": "13:30",
-          "title": "Almuerzo de camino a Valencia",
+          "title": "Almuerzo en Varqués",
           "icon": "restaurant",
-          "description": "Actividad: Almuerzo de camino a Valencia",
-          "location": "Por determinar",
-          "date": "2025-12-21",
+          "description": "Probaremos la autentica paella valencia.",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/e7ce2434-ef76-4690-94d7-b4dca563447d.webp",
+            "url": "/images/activities/va-act-1-2.webp",
             "alt": "Almuerzo de camino a Valencia en Valencia"
           },
           "links": []
         },
         {
-          "id": "d192b4d2-7405-44b9-8122-59c0522259e0",
+          "id": "va-act-1-3",
           "time": "15:00",
           "title": "Check-in Airbnb",
           "icon": "hotel",
           "description": "Descarga de maletas ",
-          "location": "Carrer de Mossèn Planelles, 2, Valencia, Comunidad Valenciana 46011, Spain",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Carrer de Mossèn Planelles, 2, Valencia, Comunidad Valenciana 46011, Spain",
+              "link": "https://www.google.com/maps/place/Carrer+de+Moss%C3%A8n+Planelles,+2,+Poblats+Mar%C3%ADtims,+46011+Val%C3%A8ncia/@39.4704271,-0.3339823,16z/data=!3m1!4b1!4m6!3m5!1s0xd604866a077c437:0x9f77bb750b147e9a!8m2!3d39.470423!4d-0.3314074!16s%2Fg%2F11b8zg5pz3?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/d192b4d2-7405-44b9-8122-59c0522259e0.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Check-in Airbnb en Valencia"
           },
           "links": [
@@ -71,15 +83,19 @@
           ]
         },
         {
-          "id": "00ad4c65-2eaf-4fae-83c4-0976ec2acdaa",
+          "id": "va-act-1-4",
           "time": "15:30",
           "title": "Port de La Mar",
           "icon": "fort",
           "description": "Caminando por las calles de Valencia",
-          "location": "Plaça de la Porta de la Mar, sn, Ciutat Vella, 46003 València, Valencia",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Plaça de la Porta de la Mar, sn, Ciutat Vella, 46003 València, Valencia",
+              "link": "https://www.google.com/maps/place/Puerta+del+Mar/@39.4721004,-0.3710622,17z/data=!3m1!4b1!4m6!3m5!1s0xd6048b1108c3223:0xb68c275674815c4e!8m2!3d39.4720963!4d-0.3684873!16s%2Fg%2F11cnkk2str?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/00ad4c65-2eaf-4fae-83c4-0976ec2acdaa.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Port de La Mar en Valencia"
           },
           "links": [
@@ -92,15 +108,19 @@
           ]
         },
         {
-          "id": "4745e6d4-c67f-4a76-b354-036835f2f5b4",
+          "id": "va-act-1-5",
           "time": "15:45",
           "title": "Pont de les Flors",
           "icon": "local_florist",
           "description": "Viendo algunas flores",
-          "location": "Puente de las Flores- Alcaldesa Rita Barberá, El Llano del Real, 46010 Valencia",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Puente de las Flores- Alcaldesa Rita Barberá, El Llano del Real, 46010 Valencia",
+              "link": "https://www.google.com/maps/place/Puente+de+las+Flores/@39.4711096,-0.3668188,17z/data=!3m1!4b1!4m6!3m5!1s0xd6048ba397dd80f:0x9bfd8d3acabddc3f!8m2!3d39.4711055!4d-0.3642439!16s%2Fg%2F12384n97?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/4745e6d4-c67f-4a76-b354-036835f2f5b4.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Pont de les Flors en Valencia"
           },
           "links": [
@@ -113,15 +133,19 @@
           ]
         },
         {
-          "id": "2608281b-68cb-4d59-a514-99e7c0130712",
+          "id": "va-act-1-6",
           "time": "16:00",
           "title": "Ciudad de las Artes y las Ciencias",
           "icon": "palette",
           "description": "Prepara la cámara",
-          "location": "Quatre Carreres, 46013 Valencia",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Quatre Carreres, 46013 Valencia",
+              "link": "https://www.google.com/maps/place/Ciudad+de+las+Artes+y+las+Ciencias/@39.4548792,-0.3530653,17z/data=!3m1!4b1!4m6!3m5!1s0xd6048e9d19b4381:0x62eb4407a5ebf894!8m2!3d39.4548751!4d-0.3504904!16zL20vMDNxbGdt?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/2608281b-68cb-4d59-a514-99e7c0130712.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Ciudad de las Artes y las Ciencias en Valencia"
           },
           "links": [
@@ -134,15 +158,19 @@
           ]
         },
         {
-          "id": "e55377f9-5736-468f-a6f8-16f66f14c0c9",
+          "id": "va-act-1-7",
           "time": "16:30",
           "title": "Tardeo en rooftop",
           "icon": "tapas",
           "description": "Disfrutando de las vistas",
-          "location": "Av. de França, 11, Camins al Grau, 46023 Barceló, Valencia",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Av. de França, 11, Camins al Grau, 46023 Barceló, Valencia",
+              "link": "https://www.google.com/maps/place/270%C2%BA+Terrace+at+Barcel%C3%B3/@39.4608823,-0.3551636,16z/data=!3m1!4b1!4m6!3m5!1s0xd6048ebc48c9251:0x41c64a6f8c145ba5!8m2!3d39.4608782!4d-0.3525887!16s%2Fg%2F11dd_ql45m?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/e55377f9-5736-468f-a6f8-16f66f14c0c9.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Tardeo en rooftop en Valencia"
           },
           "links": [
@@ -155,15 +183,19 @@
           ]
         },
         {
-          "id": "ff1ccd86-d227-41fb-9630-791efebaddbc",
+          "id": "va-act-1-8",
           "time": "18:00",
           "title": "Marina de Valencia",
           "icon": "anchor",
           "description": "Caminando un poco más",
-          "location": "Carrer del Moll de la Duana, s/n, Poblats Marítims, 46024 València, Valencia",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Carrer del Moll de la Duana, s/n, Poblats Marítims, 46024 València, Valencia",
+              "link": "https://www.google.com/maps/place/La+Marina+de+Valencia/@39.4614653,-0.3324662,17z/data=!3m1!4b1!4m6!3m5!1s0xd6048438db10511:0x360eb788bad2cee8!8m2!3d39.4614612!4d-0.3298913!16s%2Fg%2F11h01204p?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/ff1ccd86-d227-41fb-9630-791efebaddbc.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Marina de Valencia en Valencia"
           },
           "links": [
@@ -176,29 +208,37 @@
           ]
         },
         {
-          "id": "f8de6f01-ecf3-465b-9dcc-3f28a67d5669",
+          "id": "va-act-1-9",
           "time": "19:00",
           "title": "Cena",
           "icon": "restaurant",
           "description": "Actividad: Cena",
-          "location": "Por determinar",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/f8de6f01-ecf3-465b-9dcc-3f28a67d5669.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Cena en Valencia"
           },
           "links": []
         },
         {
-          "id": "6c13122f-a0c8-44e6-acac-72506d872e6d",
+          "id": "va-act-1-10",
           "time": "22:00",
           "title": "Regreso a casa",
           "icon": "hotel",
           "description": "Merecido descanso",
-          "location": "Carrer de Mossèn Planelles, 2, Valencia, Comunidad Valenciana 46011, Spain",
-          "date": "2025-12-21",
+          "location": [
+            {
+              "label": "Carrer de Mossèn Planelles, 2, Valencia, Comunidad Valenciana 46011, Spain",
+              "link": "https://www.google.com/maps/place/Carrer+de+Moss%C3%A8n+Planelles,+2,+Poblats+Mar%C3%ADtims,+46011+Val%C3%A8ncia/@39.4704271,-0.3339823,16z/data=!3m1!4b1!4m6!3m5!1s0xd604866a077c437:0x9f77bb750b147e9a!8m2!3d39.470423!4d-0.3314074!16s%2Fg%2F11b8zg5pz3?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/6c13122f-a0c8-44e6-acac-72506d872e6d.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Regreso a casa en Valencia"
           },
           "links": [
@@ -226,15 +266,19 @@
       "description": "El centro de Valencia y La Albufera",
       "activities": [
         {
-          "id": "2ffaee52-333e-483c-81dd-9b247588ac96",
+          "id": "va-act-2-1",
           "time": "09:30",
           "title": "Desayuno en Plaza de la Virgen",
           "icon": "restaurant",
           "description": "Atienden por orden de llegada",
-          "location": "C/ del Comte d'Almodóvar, 1, Bajo Izq, Ciutat Vella, 46003 Valencia",
-          "date": "2025-12-22",
+          "location": [
+            {
+              "label": "C/ del Comte d'Almodóvar, 1, Bajo Izq, Ciutat Vella, 46003 Valencia",
+              "link": "https://www.google.com/maps/place/Brunch+Corner+-+La+Virgen/@39.4770001,-0.3781816,17z/data=!4m10!1m2!2m1!1sC%2F+del+Comte+d'Almod%C3%B3var,+1,+Bajo+Izq,+Ciutat+Vella,+46003+Valencia!3m6!1s0xd604f52c6fa0867:0x7044a56ac6d03a51!8m2!3d39.4769!4d-0.37559!15sCkRDLyBkZWwgQ29tdGUgZCdBbG1vZMOzdmFyLCAxLCBCYWpvIEl6cSwgQ2l1dGF0IFZlbGxhLCA0NjAwMyBWYWxlbmNpYVpBIj9jIGRlbCBjb210ZSBkIGFsbW9kw7N2YXIgMSBiYWpvIGl6cSBjaXV0YXQgdmVsbGEgNDYwMDMgdmFsZW5jaWGSARFicnVuY2hfcmVzdGF1cmFudJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOWE9EUmlaM0ozUlJBQuABAPoBBAheECY!16s%2Fg%2F11f08zbxs4?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/2ffaee52-333e-483c-81dd-9b247588ac96.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Desayuno en Plaza de la Virgen en Valencia"
           },
           "links": [
@@ -247,15 +291,19 @@
           ]
         },
         {
-          "id": "ce3ae64a-ed61-4eb6-be50-f5afaa2e0d87",
+          "id": "va-act-2-2",
           "time": "11:00",
           "title": "Free walking tour",
           "icon": "directions_walk",
           "description": "En la Plaza de la Virgen encuentra el paraguas naranja!",
-          "location": "Plaça de la Verge, 1, 46001 València, Valencia, España",
-          "date": "2025-12-22",
+          "location": [
+            {
+              "label": "Plaça de la Verge, 1, 46001 València, Valencia, España",
+              "link": "https://google.com/maps/?q=39.475994,-0.375457"
+            }
+          ],
           "image": {
-            "url": "/images/activities/ce3ae64a-ed61-4eb6-be50-f5afaa2e0d87.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Free walking tour en Valencia"
           },
           "links": [
@@ -274,29 +322,37 @@
           ]
         },
         {
-          "id": "d4692cd3-e7b0-49e4-91a0-7ed745b17fe7",
+          "id": "va-act-2-3",
           "time": "14:30",
           "title": "Almuerzo ",
           "icon": "restaurant",
           "description": "Actividad: Almuerzo ",
-          "location": "Por determinar",
-          "date": "2025-12-22",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/d4692cd3-e7b0-49e4-91a0-7ed745b17fe7.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Almuerzo  en Valencia"
           },
           "links": []
         },
         {
-          "id": "fb73fdd0-ffec-4f9c-94fd-d86fc1adb875",
+          "id": "va-act-2-4",
           "time": "16:00",
           "title": "Passeig Marítim de València (opcional)",
           "icon": "beach_access",
           "description": "Un paseo por la playa siempre viene bien",
-          "location": "Poblats Marítims, 46011 Valencia",
-          "date": "2025-12-22",
+          "location": [
+            {
+              "label": "Poblats Marítims, 46011 Valencia",
+              "link": "https://www.google.com/maps/place/Passeig+Mar%C3%ADtim+de+Val%C3%A8ncia/@39.4748598,-0.3277382,15.01z/data=!4m6!3m5!1s0xd6049f074384577:0x25d2619511c349fa!8m2!3d39.4745966!4d-0.3244601!16s%2Fg%2F11j83sfppb?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/fb73fdd0-ffec-4f9c-94fd-d86fc1adb875.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Passeig Marítim de València (opcional) en Valencia"
           },
           "links": [
@@ -309,15 +365,19 @@
           ]
         },
         {
-          "id": "1b51c124-2258-404d-8a2e-9504c48999e4",
+          "id": "va-act-2-5",
           "time": "16:30",
           "title": "La Albufera",
           "icon": "sailing",
           "description": "Atardecer en la Albufera (Embarcadero de la Gola de Pujol)",
-          "location": "Avinguda dels Pinars, 1, Pobles del Sud, 46012 València, Valencia",
-          "date": "2025-12-22",
+          "location": [
+            {
+              "label": "Avinguda dels Pinars, 1, Pobles del Sud, 46012 València, Valencia",
+              "link": "https://www.google.com/maps/place/Embarcadero+de+la+Gola+de+Pujol/@39.3489872,-0.3260593,17z/data=!3m1!4b1!4m6!3m5!1s0xd604b5c5c4fde77:0x6d7e4b272b3f659b!8m2!3d39.3489831!4d-0.3234844!16s%2Fg%2F11t7smx3v3?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/1b51c124-2258-404d-8a2e-9504c48999e4.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "La Albufera en Valencia"
           },
           "links": [
@@ -330,15 +390,19 @@
           ]
         },
         {
-          "id": "09230e4a-0412-4ea2-90e0-13598bd8bd61",
+          "id": "va-act-2-6",
           "time": "20:30",
           "title": "Cena",
           "icon": "restaurant",
           "description": "Actividad: Cena",
-          "location": "Por determinar",
-          "date": "2025-12-22",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/09230e4a-0412-4ea2-90e0-13598bd8bd61.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Cena en Valencia"
           },
           "links": []
@@ -353,43 +417,55 @@
       "description": "Pasando por Madrid",
       "activities": [
         {
-          "id": "3c080201-f047-4e20-bb59-44ebd964c4e3",
+          "id": "va-act-3-1",
           "time": "09:00",
           "title": "Último desayuno en Valencia",
           "icon": "restaurant",
           "description": "Actividad: Último desayuno en Valencia",
-          "location": "Por determinar",
-          "date": "2025-12-23",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/3c080201-f047-4e20-bb59-44ebd964c4e3.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Último desayuno en Valencia en Madrid"
           },
           "links": []
         },
         {
-          "id": "bc2942fa-8192-4aee-ae1d-fafa2ae40cf6",
+          "id": "va-act-3-2",
           "time": "11:00",
           "title": "Check-out Airbnb",
           "icon": "airport_shuttle",
           "description": "Salida a Madrid",
-          "location": "Por determinar",
-          "date": "2025-12-23",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/bc2942fa-8192-4aee-ae1d-fafa2ae40cf6.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Check-out Airbnb en Madrid"
           },
           "links": []
         },
         {
-          "id": "943e53fe-bb77-4794-803e-09cdaec343dd",
+          "id": "va-act-3-3",
           "time": "14:00",
           "title": "Check-in Airbnb",
           "icon": "hotel",
           "description": "Descarga de maletas ",
-          "location": "Calle de la Flora, 3, Madrid, Comunidad de Madrid 28013, Spain",
-          "date": "2025-12-23",
+          "location": [
+            {
+              "label": "Calle de la Flora, 3, Madrid, Comunidad de Madrid 28013, Spain",
+              "link": "https://www.google.com/maps/place/C.+de+la+Flora,+3,+Centro,+28013+Madrid/@40.4182723,-3.7107365,16z/data=!3m1!4b1!4m6!3m5!1s0xd42287c06e76511:0xfd893b482676c52e!8m2!3d40.4182682!4d-3.7081616!16s%2Fg%2F11c21k5lss?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/943e53fe-bb77-4794-803e-09cdaec343dd.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Check-in Airbnb en Madrid"
           },
           "links": [
@@ -402,43 +478,55 @@
           ]
         },
         {
-          "id": "b983fe10-8c47-4533-9cf3-6970d595a274",
+          "id": "va-act-3-4",
           "time": "15:30",
           "title": "Almuerzo",
           "icon": "restaurant",
           "description": "Actividad: Almuerzo",
-          "location": "Por determinar",
-          "date": "2025-12-23",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/b983fe10-8c47-4533-9cf3-6970d595a274.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Almuerzo en Madrid"
           },
           "links": []
         },
         {
-          "id": "637cf8b9-8abd-4871-9b21-7e3c1ece0bfd",
+          "id": "va-act-3-5",
           "time": "16:30",
           "title": "Tarde libre",
           "icon": "self_improvement",
           "description": "Tiempo libre",
-          "location": "Por determinar",
-          "date": "2025-12-23",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/637cf8b9-8abd-4871-9b21-7e3c1ece0bfd.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Tarde libre en Madrid"
           },
           "links": []
         },
         {
-          "id": "7d9219be-1c68-4bf1-b4ca-0e6d5338f47b",
+          "id": "va-act-3-6",
           "time": "18:00",
           "title": "Mercadillo de Nuevos Ministerios",
           "icon": "storefront",
           "description": "Vísperas de Navidad en Madrid",
-          "location": "Nuevos Ministerios, Tetuán, 28003 Madrid",
-          "date": "2025-12-23",
+          "location": [
+            {
+              "label": "Nuevos Ministerios, Tetuán, 28003 Madrid",
+              "link": "https://www.google.com/maps/place/Mercadillo+de+Nuevos+Ministerios/@40.4464213,-3.6947508,17z/data=!3m1!4b1!4m6!3m5!1s0xd42290068faaa25:0x1c8307144943e6b!8m2!3d40.4464172!4d-3.6921759!16s%2Fg%2F11y98jqv70?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            }
+          ],
           "image": {
-            "url": "/images/activities/7d9219be-1c68-4bf1-b4ca-0e6d5338f47b.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Mercadillo de Nuevos Ministerios en Madrid"
           },
           "links": [
@@ -460,15 +548,19 @@
       "description": "Feliz Navidad!",
       "activities": [
         {
-          "id": "183efd3e-21b6-40fd-b851-91447c012e50",
+          "id": "va-act-4-1",
           "time": "12:00",
           "title": "Check-out Airbnb",
           "icon": "airport_shuttle",
           "description": "Salida a Ávila",
-          "location": "Por determinar",
-          "date": "2025-12-24",
+          "location": [
+            {
+              "label": "Por determinar",
+              "link": "#"
+            }
+          ],
           "image": {
-            "url": "/images/activities/183efd3e-21b6-40fd-b851-91447c012e50.webp",
+            "url": "/images/activities/act-valencia-std.webp",
             "alt": "Check-out Airbnb en Ávila"
           },
           "links": []

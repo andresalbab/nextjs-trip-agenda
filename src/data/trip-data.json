@@ -20,11 +20,11 @@
           "time": "13:00",
           "title": "Check-in Airbnb",
           "icon": "hotel",
-          "description": "Llegada a la finca",
+          "description": "Llegada a la casa rural como se conoce en España o finca en colombiano.",
           "location": [
             {
-              "label": "Calle Cañada Real, Ávila, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Calle+Cañada+Real,+Ávila,+España"
+              "label": "Calle Cañada Real 10, Ávila, España",
+              "link": "https://maps.app.goo.gl/GMFMjtW5oGNKBpT66"
             }
           ],
           "image": {
@@ -33,15 +33,9 @@
           },
           "links": [
             {
-              "label": "Ver en mapa",
-              "url": "http://maps.google.com",
-              "icon": "map",
-              "type": "map"
-            },
-            {
               "label": "Visitar Web",
               "url": "#",
-              "icon": "link",
+              "icon": "https://www.airbnb.com/l/R0cvTR5a",
               "type": "website"
             }
           ]
@@ -51,25 +45,17 @@
           "time": "20:00",
           "title": "Cena de Navidad",
           "icon": "outdoor_grill",
-          "description": "Cena Navideña al estilo español",
+          "description": "Cena Navideña al estilo colombo-español seguida de la entrega de regalos, actividades, música y baile.",
           "location": [
             {
               "label": "Ávila, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Ávila,+España"
+              "link": "https://maps.app.goo.gl/GMFMjtW5oGNKBpT66"
             }
           ],
           "image": {
             "url": "/images/activities/activity-1-2.webp",
             "alt": "Cena de Navidad en Ávila"
-          },
-          "links": [
-            {
-              "label": "Visitar Web",
-              "url": "#",
-              "icon": "link",
-              "type": "website"
-            }
-          ]
+          }
         }
       ]
     },
@@ -83,13 +69,13 @@
         {
           "id": "activity-2-1",
           "time": "14:00",
-          "title": "Asadito post Navidad",
+          "title": "Asadito navideño",
           "icon": "outdoor_grill",
-          "description": "Día familiar de asadito",
+          "description": "Día familiar de asadito navideño, con un menú de platos de las 3 familias (si, los Almanza también tienen su plato)",
           "location": [
             {
               "label": "Ávila, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Ávila,+España"
+              "link": "https://maps.app.goo.gl/GMFMjtW5oGNKBpT66"
             }
           ],
           "image": {
@@ -99,7 +85,32 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://www.airbnb.com/l/R0cvTR5a",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-2-1",
+          "time": "18:00",
+          "title": "Noche de Karaoke",
+          "icon": "outdoor_grill",
+          "description": "Karaoke bailable, con premios y música para todas las edades",
+          "location": [
+            {
+              "label": "Ávila, España",
+              "link": "https://maps.app.goo.gl/GMFMjtW5oGNKBpT66"
+            }
+          ],
+          "image": {
+            "url": "/images/activities/activity-2-2.webp",
+            "alt": "Noche de Karaoke"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "https://www.airbnb.com/l/R0cvTR5a",
               "icon": "link",
               "type": "website"
             }
@@ -116,13 +127,26 @@
       "activities": [
         {
           "id": "activity-3-1",
-          "time": "Todo el día",
-          "title": "Día libre",
-          "icon": "self_improvement",
-          "description": "Descanso",
+          "time": "11:00",
+          "title": "Check-out Airbnb",
+          "icon": "airport_shuttle",
+          "description": "Salida de la casa rural, cada uno a casa para recargar ropa y energía",
           "location": "N/A",
           "image": {
             "url": "/images/activities/activity-3-1.webp",
+            "alt": "Checkout"
+          },
+          "links": []
+        },
+        {
+          "id": "activity-3-2",
+          "time": "Todo el día",
+          "title": "Día libre",
+          "icon": "self_improvement",
+          "description": "Descanso, relax y disfrutar de la ciudad",
+          "location": "N/A",
+          "image": {
+            "url": "/images/activities/activity-3-2.webp",
             "alt": "Día de descanso"
           },
           "links": []
@@ -141,11 +165,11 @@
           "time": "13:00",
           "title": "Check-in Airbnb",
           "icon": "hotel",
-          "description": "Llegada y descarga",
+          "description": "Previo almuerzo libre para cada uno, llegada a Huetor y descarga de maletas",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
@@ -170,7 +194,7 @@
           "location": [
             {
               "label": "Plaza Bib-Rambla, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Plaza+Bib-Rambla,+Granada,+España"
+              "link": "https://maps.app.goo.gl/QPPEwr9X7EGwZALs8"
             }
           ],
           "image": {
@@ -188,19 +212,27 @@
         },
         {
           "id": "activity-4-3",
-          "time": "19:30",
-          "title": "Cena Los Manueles",
-          "icon": "restaurant",
-          "description": "El restaurante Los Manueles es muy tradicional y tiene tapeo local. Auténtica comida granadina",
+          "time": "20:00",
+          "title": "Cena Suffle Table",
+          "icon": "dinner_dining",
+          "description": "Cómo no encontramos reserva aún, la idea es dividir el grupo en 3 mesas al azar y asignar alguno de los 3 restaurantes al azar para cada mesa. Opciones de restaurantes: El sintapujos, Rincon de Lorca o Perromedio",
           "location": [
             {
-              "label": "Restaurante Los Manueles, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Los+Manueles+Granada"
+              "label": "Sintapujos Taberna",
+              "link": "https://maps.app.goo.gl/HxawhvUJfz7CUDg68"
+            },
+            {
+              "label": "Rincon de Lorca",
+              "link": "https://maps.app.goo.gl/KM9qUvX88pHdLCdZ9"
+            },
+            {
+              "label": "Perromedio",
+              "link": "https://maps.app.goo.gl/XHripxr7vutrKyMT6"
             }
           ],
           "image": {
             "url": "/images/activities/activity-4-3.webp",
-            "alt": "Cena Los Manueles"
+            "alt": "Cena Carmen El Agua"
           },
           "links": [
             {
@@ -273,18 +305,18 @@
         {
           "id": "activity-5-3",
           "time": "15:30",
-          "title": "Bar hopping de tapas",
-          "icon": "tapas",
-          "description": "Almuerzo a lo español de comer tapas en varios bares, de pie y sin prisa. En Granada es un clásico y normalmente te ponen una tapa gratis con la bebida.",
+          "title": "Almuerzo en Los Manueles",
+          "icon": "restaurant",
+          "description": "El restaurante Los Manueles es muy tradicional y tiene tapeo local. Auténtica comida granadina",
           "location": [
             {
-              "label": "Albaicín, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Albaicín,+Granada,+España"
+              "label": "C. Cárcel Baja, 1, Centro, 18001 Granada",
+              "link": "https://maps.app.goo.gl/XHripxr7vutrKyMT6"
             }
           ],
           "image": {
-            "url": "/images/activities/activity-5-3.webp",
-            "alt": "Tapas en Granada"
+            "url": "/images/activities/activity-4-3.webp",
+            "alt": "Cena Los Manueles"
           },
           "links": [
             {
@@ -297,19 +329,23 @@
         },
         {
           "id": "activity-5-4",
-          "time": "17:00",
-          "title": "Mirador de San Nicolás",
-          "icon": "tour",
-          "description": "Recorrer los barrios del Albaicín y disfrutar de las mejores vistas de la Alhambra desde el Mirador",
+          "time": "17:30",
+          "title": "Postre en tetería arabe",
+          "icon": "restaurant",
+          "description": "Es como estar en a Marruecos, en plena calle de las teterías! Entre decoraciones que te dejan sin palabras, dulces árabes y té moruno espectacular, estas teterías son el plan perfecto para desconectar y subir fotos que van a causar envidia - ¡parada obligada en Granada!",
           "location": [
             {
-              "label": "Plaza Mirador de San Nicolás, 2, Albaicín, 18010 Granada",
-              "link": "https://maps.app.goo.gl/kPy5Tq7CC2NBE5d1A"
+              "label": "Tetería Dar Ziryab",
+              "link": "https://maps.app.goo.gl/77h8ChnkRvu2LBz29"
+            },
+            {
+              "label": "Tetería AL WAWA",
+              "link": "https://maps.app.goo.gl/J3sBE6Ga978e5Ae46"
             }
           ],
           "image": {
             "url": "/images/activities/activity-5-4.webp",
-            "alt": "Mirador de San Nicolás"
+            "alt": "Teterias arabes"
           },
           "links": [
             {
@@ -322,24 +358,49 @@
         },
         {
           "id": "activity-5-5",
-          "time": "20:00",
-          "title": "Cena Carmen El Agua",
-          "icon": "dinner_dining",
-          "description": "Cena fancy en un carmen con vistas espectaculares",
+          "time": "18:30",
+          "title": "Mirador de San Nicolás",
+          "icon": "tour",
+          "description": "Recorrer los barrios del Albaicín y disfrutar de las mejores vistas de la Alhambra desde el Mirador",
           "location": [
             {
-              "label": "Carmen El Agua, Albaicín, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Carmen+El+Agua+Granada"
+              "label": "Plaza Mirador de San Nicolás, 2, Albaicín, 18010 Granada",
+              "link": "https://maps.app.goo.gl/kPy5Tq7CC2NBE5d1A"
             }
           ],
           "image": {
             "url": "/images/activities/activity-5-5.webp",
-            "alt": "Cena Carmen El Agua"
+            "alt": "Mirador de San Nicolás"
           },
           "links": [
             {
               "label": "Visitar Web",
               "url": "#",
+              "icon": "link",
+              "type": "website"
+            }
+          ]
+        },
+        {
+          "id": "activity-5-6",
+          "time": "20:30",
+          "title": "Bar hopping de tapas",
+          "icon": "tapas",
+          "description": "Almuerzo a lo español de comer tapas en varios bares, de pie y sin prisa. En Granada es un clásico y normalmente te ponen una tapa gratis con la bebida.",
+          "location": [
+            {
+              "label": "Ruta de restaurantes en el centro",
+              "link": "https://maps.app.goo.gl/Za3T4DfRZJbtrzzQA"
+            }
+          ],
+          "image": {
+            "url": "/images/activities/activity-5-6.webp",
+            "alt": "Tapas en Granada"
+          },
+          "links": [
+            {
+              "label": "Visitar Web",
+              "url": "https://maps.app.goo.gl/Za3T4DfRZJbtrzzQA",
               "icon": "link",
               "type": "website"
             }
@@ -363,7 +424,7 @@
           "location": [
             {
               "label": "Estación de Esquí Sierra Nevada, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+              "link": "https://maps.app.goo.gl/a9Wt3br17M4aFG4EA"
             }
           ],
           "image": {
@@ -388,7 +449,7 @@
           "location": [
             {
               "label": "Pistas de Sierra Nevada, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+              "link": "https://maps.app.goo.gl/kwSp8p6LmftApENa9"
             }
           ],
           "image": {
@@ -398,7 +459,7 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://umb.sierranevada.es/media/jschdyc1/plano-de-pistas-03122025_.pdf?_gl=1*1jty2ca*_gcl_au*MzAwMjI5NjA1LjE3NjM3MjA1NjQ.*_ga*MTY3OTE0MDg1Ni4xNzYzNzIwNTY0*_ga_D3LE6HCC9D*czE3NjYyNjMyMTkkbzIkZzAkdDE3NjYyNjMyMTkkajYwJGwwJGgw",
               "icon": "link",
               "type": "website"
             }
@@ -413,7 +474,7 @@
           "location": [
             {
               "label": "Zona de descanso, Sierra Nevada, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+              "link": "https://maps.app.goo.gl/kwSp8p6LmftApENa9"
             }
           ],
           "image": {
@@ -423,7 +484,7 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://umb.sierranevada.es/media/jschdyc1/plano-de-pistas-03122025_.pdf?_gl=1*1jty2ca*_gcl_au*MzAwMjI5NjA1LjE3NjM3MjA1NjQ.*_ga*MTY3OTE0MDg1Ni4xNzYzNzIwNTY0*_ga_D3LE6HCC9D*czE3NjYyNjMyMTkkbzIkZzAkdDE3NjYyNjMyMTkkajYwJGwwJGgw",
               "icon": "link",
               "type": "website"
             }
@@ -438,7 +499,7 @@
           "location": [
             {
               "label": "Pistas de Sierra Nevada, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+              "link": "https://maps.app.goo.gl/kwSp8p6LmftApENa9"
             }
           ],
           "image": {
@@ -448,7 +509,7 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://umb.sierranevada.es/media/jschdyc1/plano-de-pistas-03122025_.pdf?_gl=1*1jty2ca*_gcl_au*MzAwMjI5NjA1LjE3NjM3MjA1NjQ.*_ga*MTY3OTE0MDg1Ni4xNzYzNzIwNTY0*_ga_D3LE6HCC9D*czE3NjYyNjMyMTkkbzIkZzAkdDE3NjYyNjMyMTkkajYwJGwwJGgw",
               "icon": "link",
               "type": "website"
             }
@@ -462,8 +523,8 @@
           "description": "Bajada de la montaña y chill. Tiempo de descanso después de un día activo",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
@@ -481,24 +542,24 @@
         },
         {
           "id": "activity-6-6",
-          "time": "21:00",
-          "title": "Cena El Sintapujos / Perromedio",
+          "time": "20:00",
+          "title": "Cena Carmen El Agua",
           "icon": "dinner_dining",
-          "description": "Pendiente definir cuál de los 2. Restaurantes locales con encanto",
+          "description": "Cena fancy en un carmen con vistas espectaculares",
           "location": [
             {
-              "label": "Centro de Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Pcta. del Aljibe de Trillo, 7, Albaicín, 18010 Granada",
+              "link": "https://maps.app.goo.gl/sVg6N4bFpw7DLJ1Z8"
             }
           ],
           "image": {
             "url": "/images/activities/activity-6-6.webp",
-            "alt": "Cena El Sintapujos / Perromedio"
+            "alt": "Cena Carmen El Agua"
           },
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://mejoresrestaurantesgranada.azureedge.net/elagua/menus-especiales/Menús%20Grupos%20El%20Agua%20ENG-27102025102649147.pdf",
               "icon": "link",
               "type": "website"
             }
@@ -522,7 +583,7 @@
           "location": [
             {
               "label": "Estación de Esquí Sierra Nevada, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada+Ski+Resort"
+              "link": "https://maps.app.goo.gl/a9Wt3br17M4aFG4EA"
             }
           ],
           "image": {
@@ -532,7 +593,7 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://sierranevada.es",
               "icon": "link",
               "type": "website"
             }
@@ -546,8 +607,8 @@
           "description": "Juegos en la nieve, muñecos de nieve, o más ski para los atrevidos",
           "location": [
             {
-              "label": "Sierra Nevada, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Sierra+Nevada,+Granada,+España"
+              "label": "Pistas de Sierra Nevada, Granada, España",
+              "link": "https://maps.app.goo.gl/kwSp8p6LmftApENa9"
             }
           ],
           "image": {
@@ -557,7 +618,7 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://umb.sierranevada.es/media/jschdyc1/plano-de-pistas-03122025_.pdf?_gl=1*1jty2ca*_gcl_au*MzAwMjI5NjA1LjE3NjM3MjA1NjQ.*_ga*MTY3OTE0MDg1Ni4xNzYzNzIwNTY0*_ga_D3LE6HCC9D*czE3NjYyNjMyMTkkbzIkZzAkdDE3NjYyNjMyMTkkajYwJGwwJGgw",
               "icon": "link",
               "type": "website"
             }
@@ -596,8 +657,8 @@
           "description": "Bajada de la montaña y chill. Preparación para la noche especial",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
@@ -621,8 +682,8 @@
           "description": "Show de flamenco en una cueva. ¡Experiencia auténtica granadina!",
           "location": [
             {
-              "label": "Sacromonte, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Tablao+Flamenco+Sacromonte+Granada"
+              "label": "Cueva Flamenca Los Amayas",
+              "link": "https://maps.app.goo.gl/vWzzrHSFn3L3ApLAA"
             }
           ],
           "image": {
@@ -632,7 +693,7 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "#https://cuevalosamayas.com/en/?idcp=2XMD6&gad_source=1&gad_campaignid=21098202190&gbraid=0AAAAA9SMGDeay_O37BmwwYxwUW0XzX3Fy&gclid=Cj0KCQiAr5nKBhCpARIsACa_NiOgxOVR3ktrbCd7fI_ybeFifS17RPRfdD78TAehRZBz6e39alqpHUEaAtZyEALw_wcB",
               "icon": "link",
               "type": "website"
             }
@@ -647,7 +708,7 @@
           "location": [
             {
               "label": "Palacio Andaluz Almona, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Palacio+Andaluz+Almona+Granada"
+              "link": "https://maps.app.goo.gl/pgHP2gHCxnE68nCd8"
             }
           ],
           "image": {
@@ -657,7 +718,7 @@
           "links": [
             {
               "label": "Visitar Web",
-              "url": "#",
+              "url": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/palacioandaluzalmona/%3Fhl%3Des&ved=2ahUKEwjD_4rHhs2RAxW3UqQEHduJPWMQFnoECEgQAQ&usg=AOvVaw1JcxvWZOzuUdw9d3vUmhz1",
               "icon": "link",
               "type": "website"
             }
@@ -680,8 +741,8 @@
           "description": "Desayuno tranqui en casa. Día relajado antes de la celebración",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
@@ -706,7 +767,7 @@
           "location": [
             {
               "label": "Restaurante Bongo, Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Restaurante+Bongo+Granada"
+              "link": "https://maps.app.goo.gl/4oMtBkxWruYLi7Nd8"
             }
           ],
           "image": {
@@ -727,11 +788,11 @@
           "time": "20:00",
           "title": "Cena de Fin de Año",
           "icon": "brunch_dining",
-          "description": "Cena familiar y brindis. ¡Las 12 uvas de la suerte!",
+          "description": "Cena familiar, brindis y actividades especiales para celebrar el año nuevo. ¡Las 12 uvas de la suerte!",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
@@ -749,14 +810,14 @@
         },
         {
           "id": "activity-8-4",
-          "time": "22:00",
+          "time": "21:30",
           "title": "Fiestuqui",
           "icon": "celebration",
-          "description": "DJ Law in the house. Telonero DJ Darby 🎉",
+          "description": "Actividades especiales preparadas por el comité de actividades. A continuación, fiesta de fin de año con Albeat feat.DJ Darby. Hasta las 5 de la mañana 🎉",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
@@ -779,23 +840,23 @@
       "dayNumber": 9,
       "date": "2026-01-01",
       "location": "Granada",
-      "description": "Asadito de año nuevo",
+      "description": "Sancochito de año nuevo",
       "activities": [
         {
           "id": "activity-9-1",
           "time": "14:00",
-          "title": "Asado de Desenguayabe",
+          "title": "Sancocho de Desenguayabe",
           "icon": "outdoor_grill",
-          "description": "Asado de bienvenida del año como siempre. Tradición familiar",
+          "description": "Una buena sopita colombiana PARRA comenzar el año con amigos y familia",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
             "url": "/images/activities/activity-9-1.webp",
-            "alt": "Asado de Desenguayabe"
+            "alt": "Sancocho de Desenguayabe"
           },
           "links": [
             {
@@ -823,8 +884,8 @@
           "description": "Regreso a casa. Hasta la próxima aventura",
           "location": [
             {
-              "label": "Granada, España",
-              "link": "https://www.google.com/maps/search/?api=1&query=Granada,+España"
+              "label": "Airbnb Granada",
+              "link": "https://maps.app.goo.gl/YnRCGg4Lk5at4NmY8"
             }
           ],
           "image": {
