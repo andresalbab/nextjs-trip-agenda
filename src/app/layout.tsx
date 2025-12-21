@@ -6,10 +6,19 @@ import { ThemeName } from '@/lib/types';
 import './globals.css';
 import tripData from '@/data/trip-data.json';
 
+// Get base URL safely
+const getBaseUrl = (): URL => {
+  const url = process.env.NEXT_PUBLIC_APP_URL || 'https://navidadqb2025.netlify.app';
+  try {
+    return new URL(url);
+  } catch {
+    // Fallback if URL is invalid
+    return new URL('https://navidadqb2025.netlify.app');
+  }
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL || 'https://navidadqb2025.netlify.app'
-  ),
+  metadataBase: getBaseUrl(),
   title: 'Agenda de Viaje 2025 | Navidad en España',
   description:
     'Planifica tu viaje perfecto por Ávila, Granada y Sierra Nevada con itinerarios diarios, actividades y más.',

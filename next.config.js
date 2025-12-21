@@ -24,11 +24,7 @@ const nextConfig = {
     minimumCacheTTL: 60,
     // Disable static image import optimization warnings
     dangerouslyAllowSVG: false,
-    // For Netlify: disable optimization since images are already optimized (WebP)
-    // This ensures images load directly from public folder without API route issues
-    unoptimized: process.env.NODE_ENV === 'production',
-    // For Netlify: ensure images are optimized correctly
-    // The Netlify Next.js plugin handles image optimization
+    // For Netlify: use default loader - the Netlify Next.js plugin handles image optimization
     loader: 'default',
   },
   compiler: {
