@@ -7,6 +7,9 @@ import './globals.css';
 import tripData from '@/data/trip-data.json';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || 'https://navidadqb2025.netlify.app'
+  ),
   title: 'Agenda de Viaje 2025 | Navidad en España',
   description:
     'Planifica tu viaje perfecto por Ávila, Granada y Sierra Nevada con itinerarios diarios, actividades y más.',
@@ -45,9 +48,10 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=optional"
         />
         <script
           dangerouslySetInnerHTML={{
