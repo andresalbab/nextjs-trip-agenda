@@ -28,7 +28,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/va-act-1-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/va-act-1-1.webp",
             "alt": "Salida de Murcia en Valencia"
           },
           "links": []
@@ -46,7 +46,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/va-act-1-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/va-act-1-2.webp",
             "alt": "Almuerzo de camino a Valencia en Valencia"
           },
           "links": []
@@ -64,7 +64,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Check-in Airbnb en Valencia"
           },
           "links": [
@@ -95,7 +95,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Port de La Mar en Valencia"
           },
           "links": [
@@ -120,7 +120,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Pont de les Flors en Valencia"
           },
           "links": [
@@ -145,7 +145,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Ciudad de las Artes y las Ciencias en Valencia"
           },
           "links": [
@@ -170,7 +170,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Tardeo en rooftop en Valencia"
           },
           "links": [
@@ -195,7 +195,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Marina de Valencia en Valencia"
           },
           "links": [
@@ -220,7 +220,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Cena en Valencia"
           },
           "links": []
@@ -238,7 +238,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Regreso a casa en Valencia"
           },
           "links": [
@@ -278,7 +278,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Desayuno en Plaza de la Virgen en Valencia"
           },
           "links": [
@@ -303,7 +303,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Free walking tour en Valencia"
           },
           "links": [
@@ -334,7 +334,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Almuerzo  en Valencia"
           },
           "links": []
@@ -352,7 +352,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Passeig Marítim de València (opcional) en Valencia"
           },
           "links": [
@@ -377,7 +377,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "La Albufera en Valencia"
           },
           "links": [
@@ -402,7 +402,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Cena en Valencia"
           },
           "links": []
@@ -429,7 +429,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Último desayuno en Valencia en Madrid"
           },
           "links": []
@@ -447,7 +447,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Check-out Airbnb en Madrid"
           },
           "links": []
@@ -465,7 +465,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Check-in Airbnb en Madrid"
           },
           "links": [
@@ -490,7 +490,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Almuerzo en Madrid"
           },
           "links": []
@@ -508,7 +508,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Tarde libre en Madrid"
           },
           "links": []
@@ -526,7 +526,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Mercadillo de Nuevos Ministerios en Madrid"
           },
           "links": [
@@ -560,7 +560,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/act-valencia-std.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/act-valencia-std.webp",
             "alt": "Check-out Airbnb en Ávila"
           },
           "links": []
