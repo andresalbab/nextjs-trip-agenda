@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    unoptimized: true,
     // Remote patterns kept for backward compatibility if needed
     remotePatterns: [
       {
