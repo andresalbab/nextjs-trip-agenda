@@ -8,6 +8,10 @@
   NODE_VERSION = "20"
   NPM_FLAGS = "--legacy-peer-deps"
 
+# Configure external images for Next.js
+[env]
+  NEXT_PUBLIC_S3_BUCKET = "https://lapsera-cdn.s3.eu-west-1.amazonaws.com"
+
 [[headers]]
   for = "/*"
   [headers.values]
