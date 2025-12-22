@@ -33,7 +33,15 @@ export function formatDateRange(
  * Get day status (past, current, future)
  */
 export function getDayStatus(day: Day, today: Date = new Date()): DayStatus {
-  const dayDate = new Date(day.date);
+  // Parse date string in local timezone to avoid UTC issues
+  let dayDate: Date;
+  if (typeof day.date === 'string') {
+    const [year, month, dayNum] = day.date.split('-').map(Number);
+    dayDate = new Date(year, month - 1, dayNum);
+  } else {
+    dayDate = new Date(day.date);
+  }
+  
   const todayStart = new Date(today);
   todayStart.setHours(0, 0, 0, 0);
 
@@ -53,7 +61,15 @@ export function getDayStatus(day: Day, today: Date = new Date()): DayStatus {
  * Check if date is today
  */
 export function isToday(date: string | Date, today: Date = new Date()): boolean {
-  const dateObj = typeof date === 'string' ? new Date(date) : date;
+  // Parse date string in local timezone to avoid UTC issues
+  let dateObj: Date;
+  if (typeof date === 'string') {
+    const [year, month, day] = date.split('-').map(Number);
+    dateObj = new Date(year, month - 1, day);
+  } else {
+    dateObj = date;
+  }
+  
   const todayStart = new Date(today);
   todayStart.setHours(0, 0, 0, 0);
 
