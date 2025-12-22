@@ -28,7 +28,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-1-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-1-1.webp",
             "alt": "Check-in Airbnb en Ávila"
           },
           "links": [
@@ -53,7 +53,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-1-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-1-2.webp",
             "alt": "Cena de Navidad en Ávila"
           }
         }
@@ -79,7 +79,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-2-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-2-1.webp",
             "alt": "Asado navideño en Ávila"
           },
           "links": [
@@ -104,7 +104,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-2-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-2-2.webp",
             "alt": "Noche de Karaoke"
           },
           "links": [
@@ -133,7 +133,7 @@
           "description": "Salida de la casa rural, cada uno a casa para recargar ropa y energía",
           "location": "N/A",
           "image": {
-            "url": "/images/activities/activity-3-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-3-1.webp",
             "alt": "Checkout"
           },
           "links": []
@@ -146,7 +146,7 @@
           "description": "Descanso, relax y disfrutar de la ciudad",
           "location": "N/A",
           "image": {
-            "url": "/images/activities/activity-3-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-3-2.webp",
             "alt": "Día de descanso"
           },
           "links": []
@@ -173,7 +173,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-4-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-4-1.webp",
             "alt": "Check-in en Granada"
           },
           "links": [
@@ -198,7 +198,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-4-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-4-2.webp",
             "alt": "Walking tour en Granada"
           },
           "links": [
@@ -231,7 +231,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-4-3.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-4-3.webp",
             "alt": "Cena Carmen El Agua"
           },
           "links": [
@@ -265,7 +265,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-5-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-5-1.webp",
             "alt": "La Alhambra en Granada"
           },
           "links": [
@@ -290,7 +290,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-5-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-5-2.webp",
             "alt": "Palacios Nazaríes"
           },
           "links": [
@@ -315,7 +315,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-4-3.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-4-3.webp",
             "alt": "Cena Los Manueles"
           },
           "links": [
@@ -344,7 +344,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-5-4.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-5-4.webp",
             "alt": "Teterias arabes"
           },
           "links": [
@@ -369,7 +369,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-5-5.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-5-5.webp",
             "alt": "Mirador de San Nicolás"
           },
           "links": [
@@ -394,7 +394,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-5-6.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-5-6.webp",
             "alt": "Tapas en Granada"
           },
           "links": [
@@ -428,7 +428,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-6-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-6-1.webp",
             "alt": "Estación Sierra Nevada"
           },
           "links": [
@@ -453,7 +453,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-6-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-6-2.webp",
             "alt": "Clases de Ski"
           },
           "links": [
@@ -478,7 +478,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-6-3.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-6-3.webp",
             "alt": "Almuerzo tipo Picnic"
           },
           "links": [
@@ -503,7 +503,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-6-4.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-6-4.webp",
             "alt": "Práctica Libre de Ski"
           },
           "links": [
@@ -528,7 +528,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-6-5.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-6-5.webp",
             "alt": "Salida al Airbnb"
           },
           "links": [
@@ -553,7 +553,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-6-6.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-6-6.webp",
             "alt": "Cena Carmen El Agua"
           },
           "links": [
@@ -587,7 +587,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-7-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-7-1.webp",
             "alt": "Estación Sierra Nevada"
           },
           "links": [
@@ -612,7 +612,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-7-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-7-2.webp",
             "alt": "Tiempo Libre en la Nieve"
           },
           "links": [
@@ -637,7 +637,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-7-3.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-7-3.webp",
             "alt": "Almuerzo en la Montaña"
           },
           "links": [
@@ -662,7 +662,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-7-4.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-7-4.webp",
             "alt": "Salida al Airbnb"
           },
           "links": [
@@ -687,7 +687,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-7-5.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-7-5.webp",
             "alt": "Tablao Flamenco"
           },
           "links": [
@@ -712,7 +712,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-7-6.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-7-6.webp",
             "alt": "Cena en Palacio Andaluz Almona"
           },
           "links": [
@@ -746,7 +746,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-8-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-8-1.webp",
             "alt": "Desayuno en Casa"
           },
           "links": [
@@ -771,7 +771,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-8-2.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-8-2.webp",
             "alt": "Almuerzo en Bongo"
           },
           "links": [
@@ -796,7 +796,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-8-3.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-8-3.webp",
             "alt": "Cena de Fin de Año"
           },
           "links": [
@@ -821,7 +821,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-8-4.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-8-4.webp",
             "alt": "Fiestuqui"
           },
           "links": [
@@ -855,7 +855,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-9-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-9-1.webp",
             "alt": "Sancocho de Desenguayabe"
           },
           "links": [
@@ -889,7 +889,7 @@
             }
           ],
           "image": {
-            "url": "/images/activities/activity-10-1.webp",
+            "url": "https://lapsera-cdn.s3.eu-west-1.amazonaws.com/nextjs-trip-agenda/activity-10-1.webp",
             "alt": "Check-out Airbnb"
           },
           "links": [
@@ -905,4 +905,3 @@
     }
   ]
 }
-
