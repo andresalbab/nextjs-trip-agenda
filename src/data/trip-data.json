@@ -213,7 +213,7 @@
         {
           "id": "activity-4-3",
           "time": "20:00",
-          "title": "Cena Suffle Table",
+          "title": "Cena Shuffle Table",
           "icon": "dinner_dining",
           "description": "Cómo no encontramos reserva aún, la idea es dividir el grupo en 3 mesas al azar y asignar alguno de los 3 restaurantes al azar para cada mesa. Opciones de restaurantes: El sintapujos, Rincon de Lorca o Perromedio",
           "location": [
@@ -579,7 +579,7 @@
           "time": "10:00",
           "title": "Entrada a Estación Sierra Nevada",
           "icon": "gondola_lift",
-          "description": "Gente que va a esquiar y luego los aburridos. Día flexible",
+          "description": "Gente que va a esquiar y gente que hará actividades más tranqui. Día flexible",
           "location": [
             {
               "label": "Estación de Esquí Sierra Nevada, Granada, España",
