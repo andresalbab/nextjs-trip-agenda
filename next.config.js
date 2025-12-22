@@ -13,6 +13,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'lapsera-cdn.s3.eu-west-1.amazonaws.com',
+      },
     ],
     // Optimize image formats for better performance
     formats: ['image/avif', 'image/webp'],
@@ -24,8 +28,6 @@ const nextConfig = {
     minimumCacheTTL: 60,
     // Disable static image import optimization warnings
     dangerouslyAllowSVG: false,
-    // For Netlify: use default loader - the Netlify Next.js plugin handles image optimization
-    loader: 'default',
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
