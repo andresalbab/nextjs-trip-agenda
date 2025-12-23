@@ -13,12 +13,14 @@ interface ActivityCardProps {
   activity: Activity;
   isExpanded?: boolean;
   onToggle?: () => void;
+  isPast?: boolean;
 }
 
 export function ActivityCard({
   activity,
   isExpanded: controlledExpanded,
   onToggle,
+  isPast = false,
 }: ActivityCardProps): JSX.Element {
   const [internalExpanded, setInternalExpanded] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -79,7 +81,7 @@ export function ActivityCard({
   const imageSrc = imageError ? '/images/activities/placeholder.webp' : activity.image.url;
 
   return (
-    <div className={cn(styles.card, expanded && styles.open)}>
+    <div className={cn(styles.card, expanded && styles.open, isPast && styles.pastCard)}>
       <button
         className={styles.cardHeader}
         onClick={handleToggle}
