@@ -34,7 +34,11 @@ export function DaySection({
       </div>
       <div className={styles.activities}>
         {day.activities.map((activity) => (
-          <ActivityCard key={activity.id} activity={activity} />
+          <ActivityCard 
+            key={activity.id} 
+            activity={activity}
+            isPast={status === 'past'}
+          />
         ))}
       </div>
     </div>
